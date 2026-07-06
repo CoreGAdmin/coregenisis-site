@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import logoDark from "../assets/coreg-logo-dark.png";
 import PipelineBar from "../components/PipelineBar.jsx";
 import { CAPABILITIES, SERVES } from "../data/content.js";
@@ -6,27 +5,23 @@ import { CAPABILITIES, SERVES } from "../data/content.js";
 const NAV = ["Platform", "Governance", "Who We Serve", "Partners", "Company"];
 
 export default function Home() {
-  const [solid, setSolid] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setSolid(window.scrollY > 24);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
     <div className="font-sans text-navy bg-white">
-      {/* NAV */}
-      <nav className={`sticky top-0 z-50 flex items-center justify-between px-8 py-4 transition-colors
-                      ${solid ? "bg-navy border-b border-navyLine" : "bg-transparent border-b border-transparent"}`}>
-        <img src={logoDark} alt="CoreG" className="h-[30px]" />
-        <div className="flex items-center gap-7">
+      {/* NAV — always navy. A conditional transparent-until-scroll nav has no
+          navy behind it on load (the hero is a sibling section, not a parent),
+          so it rendered as a white bar with ice-blue text. Always-navy removes
+          that whole bug class and matches every other CoreIdentity property. */}
+      <nav className="sticky top-0 z-50 flex items-center justify-between px-4 sm:px-8 py-4 bg-navy border-b border-navyLine">
+        <img src={logoDark} alt="CoreG" className="h-[26px] sm:h-[30px] flex-shrink-0" />
+        <div className="flex items-center gap-4 sm:gap-7 overflow-x-auto">
           {NAV.map((item) => (
-            <a key={item} href="#" className="text-sm font-medium text-ice/85 hover:text-ice">{item}</a>
+            <a key={item} href="#" className="hidden md:inline text-sm font-medium text-white/90 hover:text-white whitespace-nowrap">{item}</a>
           ))}
-          <a href="#" className="text-[13px] text-slateLt hover:text-ice">Client Login</a>
-          <a href="#" className="bg-gold text-navy text-sm font-semibold px-5 py-2.5 rounded">Request Access</a>
+          <a href="#" className="hidden sm:inline text-[13px] text-slateLt hover:text-ice whitespace-nowrap">Client Login</a>
+          <a href="#" className="bg-gold text-navy text-sm font-semibold px-4 sm:px-5 py-2.5 rounded whitespace-nowrap flex-shrink-0">Request Access</a>
         </div>
       </nav>
+
 
       {/* HERO */}
       <section className="bg-navy px-8 pt-24 pb-18">

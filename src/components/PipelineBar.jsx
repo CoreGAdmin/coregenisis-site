@@ -2,14 +2,14 @@ import { PIPELINE } from "../data/content.js";
 
 export default function PipelineBar() {
   return (
-    <div className="w-full overflow-x-auto">
-      <div className="flex items-center min-w-[720px] py-2">
+    <div className="w-full max-w-full overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+      <div className="flex items-center min-w-[560px] sm:min-w-[720px] py-2">
         {PIPELINE.map((stage, i) => (
           <div key={stage} className="flex items-center flex-1 last:flex-none">
             <div className="flex flex-col items-center flex-none">
               <span className="block w-3.5 h-3.5 rounded-full bg-gold pipeline-dot"
                     style={{ animationDelay: `${i * 0.3}s` }} />
-              <span className="mt-2.5 font-mono text-[11px] tracking-wide text-slateLt whitespace-nowrap">
+              <span className="mt-2.5 font-mono text-[10px] sm:text-[11px] tracking-wide text-slateLt whitespace-nowrap">
                 {stage}
               </span>
             </div>
