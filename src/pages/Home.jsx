@@ -1,25 +1,87 @@
+import { useState } from "react";
 import logoDark from "../assets/coreg-logo-dark.png";
 import PipelineBar from "../components/PipelineBar.jsx";
 import { CAPABILITIES, SERVES } from "../data/content.js";
 
 const NAV = ["Platform", "Governance", "Who We Serve", "Partners", "Company"];
 
+// Monochrome CoreIdentity mark — a simplified single-color rendering of the
+// hexagon-shield-with-keyhole for use inside small badges. The real logo is
+// a 5-color gradient; at badge scale (~16px) that reads as noise, not trust.
+// This traces the same silhouette in one color so it stays legible and
+// defers to CoreG's own palette instead of competing with it.
+function CoreIdentityMark({ className = "" }) {
+  return (
+    <svg viewBox="0 0 100 100" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 4 L92 27 V73 L50 96 L8 73 V27 Z" fill="currentColor" />
+      <circle cx="50" cy="46" r="11" fill="white" />
+      <path d="M50 55 L58 78 H42 Z" fill="white" />
+    </svg>
+  );
+}
+
+function GovernedByBadge({ variant = "governance" }) {
+  const isFooter = variant === "footer";
+  return (
+    <div
+      className={
+        isFooter
+          ? "inline-flex items-center gap-2 text-xs text-slateLt"
+          : "inline-flex items-center gap-2.5 bg-navyCard border border-navyLine rounded-full pl-2.5 pr-4 py-2"
+      }
+    >
+      <CoreIdentityMark className={isFooter ? "w-3.5 h-3.5 text-gold" : "w-4 h-4 text-gold"} />
+      <span className={isFooter ? "" : "text-[13px] text-slateLt"}>Governed by</span>
+      <span className={isFooter ? "text-white/90 font-medium" : "text-[13px] text-white font-semibold"}>CoreIdentity</span>
+    </div>
+  );
+}
+
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="font-sans text-navy bg-white">
-      {/* NAV — always navy. A conditional transparent-until-scroll nav has no
-          navy behind it on load (the hero is a sibling section, not a parent),
-          so it rendered as a white bar with ice-blue text. Always-navy removes
-          that whole bug class and matches every other CoreIdentity property. */}
-      <nav className="sticky top-0 z-50 flex items-center justify-between px-4 sm:px-8 py-4 bg-navy border-b border-navyLine">
-        <img src={logoDark} alt="CoreG" className="h-[26px] sm:h-[30px] flex-shrink-0" />
-        <div className="flex items-center gap-4 sm:gap-7 overflow-x-auto">
-          {NAV.map((item) => (
-            <a key={item} href="#" className="hidden md:inline text-sm font-medium text-white/90 hover:text-white whitespace-nowrap">{item}</a>
-          ))}
-          <a href="#" className="hidden sm:inline text-[13px] text-slateLt hover:text-ice whitespace-nowrap">Client Login</a>
-          <a href="#" className="bg-gold text-navy text-sm font-semibold px-4 sm:px-5 py-2.5 rounded whitespace-nowrap flex-shrink-0">Request Access</a>
+      {/* NAV — always navy (fixes the old scroll-conditional bug). Nav items
+          are a real toggled drawer below md, not hidden-and-forgotten —
+          hiding them with no way to reach them was a stopgap, not a design. */}
+      <nav className="sticky top-0 z-50 bg-navy border-b border-navyLine">
+        <div className="flex items-center justify-between px-4 sm:px-8 py-4">
+          <a href="/" className="flex-shrink-0" aria-label="CoreG home">
+            <img src={logoDark} alt="CoreG" className="h-[26px] sm:h-[30px]" />
+          </a>
+          <div className="hidden md:flex items-center gap-7">
+            {NAV.map((item) => (
+              <a key={item} href="#" className="text-sm font-medium text-white/90 hover:text-white whitespace-nowrap">{item}</a>
+            ))}
+            <a href="#" className="text-[13px] text-slateLt hover:text-ice whitespace-nowrap">Client Login</a>
+            <a href="#" className="bg-gold text-navy text-sm font-semibold px-5 py-2.5 rounded whitespace-nowrap">Request Access</a>
+          </div>
+          <div className="flex md:hidden items-center gap-3">
+            <a href="#" className="bg-gold text-navy text-sm font-semibold px-4 py-2 rounded whitespace-nowrap">Request Access</a>
+            <button
+              onClick={() => setMenuOpen((v) => !v)}
+              aria-label="Toggle menu"
+              aria-expanded={menuOpen}
+              className="text-white p-1 -mr-1"
+            >
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                {menuOpen ? (
+                  <path d="M4 4L18 18M18 4L4 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                ) : (
+                  <path d="M2 5H20M2 11H20M2 17H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
+        {menuOpen && (
+          <div className="md:hidden flex flex-col px-4 pb-4 gap-1 border-t border-navyLine">
+            {NAV.map((item) => (
+              <a key={item} href="#" className="py-2.5 text-[15px] font-medium text-white/90 hover:text-white">{item}</a>
+            ))}
+            <a href="#" className="py-2.5 text-[15px] text-slateLt hover:text-ice">Client Login</a>
+          </div>
+        )}
       </nav>
 
 
@@ -78,11 +140,7 @@ export default function Home() {
               for sanctioned parties, verifying documentation, and producing a cryptographic
               proof pack for every decision made. No stage advances on a silent pass.
             </p>
-            <div className="inline-flex items-center gap-2.5 bg-navyCard border border-navyLine rounded-full pl-2.5 pr-4 py-2">
-              <span className="w-2 h-2 rounded-full bg-gold" />
-              <span className="text-[13px] text-slateLt">Governed by</span>
-              <span className="text-[13px] text-white font-semibold">CoreIdentity</span>
-            </div>
+            <GovernedByBadge variant="governance" />
           </div>
           <div className="flex-1 min-w-[300px] grid gap-3.5">
             {[
@@ -131,11 +189,10 @@ export default function Home() {
       <footer className="bg-navy px-8 pt-12 pb-8">
         <div className="max-w-[1080px] mx-auto">
           <div className="flex flex-wrap justify-between gap-6 mb-8">
-            <img src={logoDark} alt="CoreG" className="h-6" />
-            <div className="inline-flex items-center gap-2 text-xs text-slateLt">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold" />
-              Governed by CoreIdentity
-            </div>
+            <a href="/" aria-label="CoreG home">
+              <img src={logoDark} alt="CoreG" className="h-6" />
+            </a>
+            <GovernedByBadge variant="footer" />
           </div>
           <div className="border-t border-navyLine pt-5 flex flex-wrap justify-between gap-3">
             <span className="text-xs text-slateLt">© 2026 CoreGenisis dba CoreG. All rights reserved.</span>
