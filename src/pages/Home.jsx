@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logoDark from "../assets/coreg-logo-dark.png";
 import coreIdentityIcon from "../assets/coreidentity-icon.png";
 import PipelineBar from "../components/PipelineBar.jsx";
+import { ComingSoonButton } from "../components/ComingSoonButton.jsx";
 import { CAPABILITIES, SERVES } from "../data/content.js";
 
 const NAV = [
@@ -47,11 +48,11 @@ export default function Home() {
             {NAV.map((item) => (
               <Link key={item.label} to={item.path} className="text-sm font-medium text-white/90 hover:text-white whitespace-nowrap">{item.label}</Link>
             ))}
-            <a href="#" className="text-[13px] text-slateLt hover:text-ice whitespace-nowrap">Client Login</a>
-            <a href="#" className="bg-gold text-navy text-sm font-semibold px-5 py-2.5 rounded whitespace-nowrap">Request Access</a>
+            <ComingSoonButton className="text-[13px] text-slateLt hover:text-ice whitespace-nowrap cursor-pointer">Client Login</ComingSoonButton>
+            <ComingSoonButton className="bg-gold text-navy text-sm font-semibold px-5 py-2.5 rounded whitespace-nowrap cursor-pointer">Request Access</ComingSoonButton>
           </div>
           <div className="flex md:hidden items-center gap-3">
-            <a href="#" className="bg-gold text-navy text-sm font-semibold px-4 py-2 rounded whitespace-nowrap">Request Access</a>
+            <ComingSoonButton className="bg-gold text-navy text-sm font-semibold px-4 py-2 rounded whitespace-nowrap cursor-pointer">Request Access</ComingSoonButton>
             <button
               onClick={() => setMenuOpen((v) => !v)}
               aria-label="Toggle menu"
@@ -73,7 +74,7 @@ export default function Home() {
             {NAV.map((item) => (
               <Link key={item.label} to={item.path} className="py-2.5 text-[15px] font-medium text-white/90 hover:text-white">{item.label}</Link>
             ))}
-            <a href="#" className="py-2.5 text-[15px] text-slateLt hover:text-ice">Client Login</a>
+            <ComingSoonButton className="py-2.5 text-[15px] text-slateLt hover:text-ice cursor-pointer">Client Login</ComingSoonButton>
           </div>
         )}
       </nav>
@@ -91,9 +92,7 @@ export default function Home() {
             CoreG governs the full lifecycle of high-value asset transactions —
             onboarding through reporting — with no stage that can be bypassed.
           </p>
-          <a href="#" className="inline-block bg-gold text-navy text-[15px] font-semibold px-8 py-3.5 rounded">
-            Request Access
-          </a>
+          <ComingSoonButton className="inline-block bg-gold text-navy text-[15px] font-semibold px-8 py-3.5 rounded cursor-pointer">Request Access</ComingSoonButton>
           <div className="max-w-[880px] mx-auto mt-16"><PipelineBar /></div>
         </div>
       </section>
@@ -167,9 +166,7 @@ export default function Home() {
           <p className="text-[15px] text-slate mb-8">
             Access is by request. Tell us what you're moving and we'll confirm fit before anything else.
           </p>
-          <a href="#" className="inline-block bg-navy text-white text-[15px] font-semibold px-8 py-3.5 rounded">
-            Request Access
-          </a>
+          <ComingSoonButton className="inline-block bg-navy text-white text-[15px] font-semibold px-8 py-3.5 rounded cursor-pointer">Request Access</ComingSoonButton>
         </div>
       </section>
 
