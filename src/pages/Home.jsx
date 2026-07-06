@@ -22,8 +22,7 @@ export default function Home() {
             CoreG governs the full lifecycle of high-value asset transactions —
             onboarding through reporting — with no stage that can be bypassed.
           </p>
-          <ComingSoonButton className="inline-block bg-gold text-navy text-[15px] font-semibold px-8 py-3.5 rounded cursor-pointer">Request Access</ComingSoonButton>
-          <div className="max-w-[880px] mx-auto mt-16"><PipelineBar /></div>
+          <div className="max-w-[880px] mx-auto mt-8"><PipelineBar /></div>
         </div>
       </section>
 
