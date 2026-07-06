@@ -1,14 +1,18 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import logoDark from "../assets/coreg-logo-dark.png";
 import coreIdentityIcon from "../assets/coreidentity-icon.png";
 import PipelineBar from "../components/PipelineBar.jsx";
 import { CAPABILITIES, SERVES } from "../data/content.js";
 
-const NAV = ["Platform", "Governance", "Who We Serve", "Partners", "Company"];
+const NAV = [
+  { label: "Platform", path: "/platform" },
+  { label: "Governance", path: "/governance" },
+  { label: "Who We Serve", path: "/who-we-serve" },
+  { label: "Partners", path: "/partners" },
+  { label: "Company", path: "/company" },
+];
 
-// Real CoreIdentity mark (cropped from the master logo, wordmark removed so
-// "CoreIdentity" isn't duplicated next to our own badge text). Confirmed by
-// rendering at multiple sizes: legible from ~28px; smaller reads as noise.
 function GovernedByBadge({ variant = "governance" }) {
   const isFooter = variant === "footer";
   return (
@@ -34,17 +38,14 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="font-sans text-navy bg-white">
-      {/* NAV — always navy (fixes the old scroll-conditional bug). Nav items
-          are a real toggled drawer below md, not hidden-and-forgotten —
-          hiding them with no way to reach them was a stopgap, not a design. */}
       <nav className="sticky top-0 z-50 bg-navy border-b border-navyLine">
         <div className="flex items-center justify-between px-4 sm:px-8 py-4">
-          <a href="/" className="flex-shrink-0" aria-label="CoreG home">
+          <Link to="/" className="flex-shrink-0" aria-label="CoreG home">
             <img src={logoDark} alt="CoreG" className="h-[26px] sm:h-[30px]" />
-          </a>
+          </Link>
           <div className="hidden md:flex items-center gap-7">
             {NAV.map((item) => (
-              <a key={item} href="#" className="text-sm font-medium text-white/90 hover:text-white whitespace-nowrap">{item}</a>
+              <Link key={item.label} to={item.path} className="text-sm font-medium text-white/90 hover:text-white whitespace-nowrap">{item.label}</Link>
             ))}
             <a href="#" className="text-[13px] text-slateLt hover:text-ice whitespace-nowrap">Client Login</a>
             <a href="#" className="bg-gold text-navy text-sm font-semibold px-5 py-2.5 rounded whitespace-nowrap">Request Access</a>
@@ -70,15 +71,13 @@ export default function Home() {
         {menuOpen && (
           <div className="md:hidden flex flex-col px-4 pb-4 gap-1 border-t border-navyLine">
             {NAV.map((item) => (
-              <a key={item} href="#" className="py-2.5 text-[15px] font-medium text-white/90 hover:text-white">{item}</a>
+              <Link key={item.label} to={item.path} className="py-2.5 text-[15px] font-medium text-white/90 hover:text-white">{item.label}</Link>
             ))}
             <a href="#" className="py-2.5 text-[15px] text-slateLt hover:text-ice">Client Login</a>
           </div>
         )}
       </nav>
 
-
-      {/* HERO */}
       <section className="bg-navy px-8 pt-24 pb-18">
         <div className="max-w-[880px] mx-auto text-center">
           <span className="inline-block font-mono text-xs tracking-[0.12em] text-gold uppercase
@@ -99,7 +98,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CAPABILITIES */}
       <section className="bg-mist px-8 py-[88px]">
         <div className="max-w-[1080px] mx-auto">
           <div className="max-w-[560px] mb-14">
@@ -120,7 +118,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GOVERNANCE */}
       <section className="bg-navy px-8 py-[88px]">
         <div className="max-w-[1080px] mx-auto flex flex-wrap gap-12 items-start">
           <div className="flex-1 min-w-[360px]">
@@ -150,7 +147,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHO WE SERVE */}
       <section className="bg-white px-8 py-[88px]">
         <div className="max-w-[1080px] mx-auto">
           <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-3">Who We Serve</div>
@@ -165,7 +161,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="bg-mist px-8 py-18 border-t border-[#E2E8F0]">
         <div className="max-w-[720px] mx-auto text-center">
           <h2 className="font-display text-[28px] font-medium text-navy mb-4">Bring us your next transaction.</h2>
@@ -178,13 +173,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="bg-navy px-8 pt-12 pb-8">
         <div className="max-w-[1080px] mx-auto">
           <div className="flex flex-wrap justify-between gap-6 mb-8">
-            <a href="/" aria-label="CoreG home">
+            <Link to="/" aria-label="CoreG home">
               <img src={logoDark} alt="CoreG" className="h-6" />
-            </a>
+            </Link>
             <GovernedByBadge variant="footer" />
           </div>
           <div className="border-t border-navyLine pt-5 flex flex-wrap justify-between gap-3">
