@@ -19,9 +19,8 @@ export default function PageFooter() {
         <div className="border-t border-navyLine pt-5 flex flex-wrap justify-between gap-3">
           <span className="text-xs text-slateLt">© 2026 CoreGenisis dba CoreG. All rights reserved.</span>
           <div className="flex gap-5">
-            {["Privacy Policy", "Terms of Service", "Disclosures"].map((l) => (
-              <a key={l} href="#" className="text-xs text-slateLt hover:text-ice">{l}</a>
-            ))}
+            <Link to="/privacy-policy" className="text-xs text-slateLt hover:text-ice">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="text-xs text-slateLt hover:text-ice">Terms of Service</Link>
           </div>
         </div>
       </div>
