@@ -1,36 +1,29 @@
 import { useState } from "react";
 import logoDark from "../assets/coreg-logo-dark.png";
+import coreIdentityIcon from "../assets/coreidentity-icon.png";
 import PipelineBar from "../components/PipelineBar.jsx";
 import { CAPABILITIES, SERVES } from "../data/content.js";
 
 const NAV = ["Platform", "Governance", "Who We Serve", "Partners", "Company"];
 
-// Monochrome CoreIdentity mark — a simplified single-color rendering of the
-// hexagon-shield-with-keyhole for use inside small badges. The real logo is
-// a 5-color gradient; at badge scale (~16px) that reads as noise, not trust.
-// This traces the same silhouette in one color so it stays legible and
-// defers to CoreG's own palette instead of competing with it.
-function CoreIdentityMark({ className = "" }) {
-  return (
-    <svg viewBox="0 0 100 100" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 4 L92 27 V73 L50 96 L8 73 V27 Z" fill="currentColor" />
-      <circle cx="50" cy="46" r="11" fill="white" />
-      <path d="M50 55 L58 78 H42 Z" fill="white" />
-    </svg>
-  );
-}
-
+// Real CoreIdentity mark (cropped from the master logo, wordmark removed so
+// "CoreIdentity" isn't duplicated next to our own badge text). Confirmed by
+// rendering at multiple sizes: legible from ~28px; smaller reads as noise.
 function GovernedByBadge({ variant = "governance" }) {
   const isFooter = variant === "footer";
   return (
     <div
       className={
         isFooter
-          ? "inline-flex items-center gap-2 text-xs text-slateLt"
-          : "inline-flex items-center gap-2.5 bg-navyCard border border-navyLine rounded-full pl-2.5 pr-4 py-2"
+          ? "inline-flex items-center gap-2.5 text-xs text-slateLt"
+          : "inline-flex items-center gap-3 bg-navyCard border border-navyLine rounded-full pl-3 pr-4 py-2"
       }
     >
-      <CoreIdentityMark className={isFooter ? "w-3.5 h-3.5 text-gold" : "w-4 h-4 text-gold"} />
+      <img
+        src={coreIdentityIcon}
+        alt="CoreIdentity"
+        className={isFooter ? "h-6 w-auto" : "h-7 w-auto"}
+      />
       <span className={isFooter ? "" : "text-[13px] text-slateLt"}>Governed by</span>
       <span className={isFooter ? "text-white/90 font-medium" : "text-[13px] text-white font-semibold"}>CoreIdentity</span>
     </div>
