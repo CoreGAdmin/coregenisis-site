@@ -8,9 +8,7 @@ export default function Company() {
     <div className="font-sans text-navy bg-white">
       <PageNav />
 
-      {/* HERO — mission/thesis. Leadership section below names the CEO,
-          per direct instruction reversing the page's original no-bio
-          constraint. */}
+      {/* HERO — mission/thesis. Leadership section below names the CEO. */}
       <section className="bg-navy px-8 pt-20 pb-16 text-center">
         <div className="max-w-[760px] mx-auto">
           <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">Company</div>
@@ -24,9 +22,7 @@ export default function Company() {
         </div>
       </section>
 
-      {/* MISSION — unchanged from original build. CoreIdentity relationship
-          woven in as real content, kept as a paragraph so it doesn't
-          outweigh CoreG's own identity on CoreG's own page. */}
+      {/* MISSION — unchanged. */}
       <section className="bg-white px-8 py-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[16px] text-slate leading-[1.8] mb-6">
@@ -52,11 +48,7 @@ export default function Company() {
         </div>
       </section>
 
-      {/* LEADERSHIP — CEO named per direct instruction. Board of Directors
-          described as an active plan Todd is executing, not an already-
-          seated body — avoids overclaiming organizational maturity that
-          doesn't exist yet. Summary kept subtle: declarative, no
-          promotional language, matching the rest of the page's voice. */}
+      {/* LEADERSHIP — final bio text, provided verbatim. */}
       <section className="bg-mist px-8 py-20 border-t border-[#E2E8F0]">
         <div className="max-w-[720px] mx-auto">
           <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-8">Leadership</div>
@@ -64,21 +56,21 @@ export default function Company() {
             <div className="mb-1 text-xs font-mono text-gold uppercase tracking-wide">Chief Executive Officer</div>
             <h2 className="font-display text-2xl font-medium text-navy mb-4">Todd Morgan</h2>
             <p className="text-[15px] text-slate leading-[1.75] mb-4">
-              Todd Morgan has been appointed Chief Executive Officer to lead CoreG. His
-              direct responsibilities include the growth of the firm, day-to-day
-              operations, and building out the leadership team — including a Chief
-              Financial Officer and Chief Technology Officer. He is also responsible for
-              appointing CoreG's Board of Directors, and will serve as Chairman of the
-              Board until a successor chairman is identified.
+              Todd Morgan serves as Chief Executive Officer of CoreG, where he leads the
+              company's strategic direction, corporate growth, and day-to-day operations.
+              He is responsible for building the executive leadership team, including the
+              appointment of the Chief Financial Officer and Chief Technology Officer, and
+              for establishing the Company's Board of Directors. He will serve as Chairman
+              of the Board until an independent Chairman is appointed.
             </p>
             <p className="text-[15px] text-slate leading-[1.75]">
-              His background spans executive leadership in federal contracting
-              across National Intelligence and defense sectors, multi-entity
-              operational leadership, and governance-framework work that led
-              into CoreIdentity — founding R&D and platform development
-              beginning in 2025, with CoreIdentity Development Group Inc.
-              formally incorporated in February 2026. CoreG runs on the
-              governance infrastructure that build produced.
+              Mr. Morgan's background spans executive leadership in federal contracting,
+              supporting National Intelligence and defense organizations, as well as
+              leadership across multi-entity business operations. He is the architect of
+              the governance infrastructure that underpins CoreG, leading the research,
+              development, and commercialization of the Company's AI governance platform.
+              His work is focused on advancing enterprise governance, identity, and trust
+              infrastructure for autonomous AI systems.
             </p>
           </div>
         </div>
