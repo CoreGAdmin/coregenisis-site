@@ -4,6 +4,23 @@ import PageFooter from "../components/PageFooter.jsx";
 import { ComingSoonButton } from "../components/ComingSoonButton.jsx";
 import { FAQ_ITEMS } from "../data/faqContent.js";
 
+// Renders one FAQ paragraph. A paragraph is normally a plain string; item
+// 2's first paragraph is an object {before, linkText, after} instead, so
+// "Who We Serve" renders as a real inline <Link> in its original sentence
+// position rather than a separate link at the end of the answer.
+function FaqParagraph({ para }) {
+  if (typeof para === "string") {
+    return <p className="text-[15px] text-slate leading-[1.75] mb-3 last:mb-0">{para}</p>;
+  }
+  return (
+    <p className="text-[15px] text-slate leading-[1.75] mb-3 last:mb-0">
+      {para.before}
+      <Link to="/who-we-serve" className="text-navy underline font-medium">{para.linkText}</Link>
+      {para.after}
+    </p>
+  );
+}
+
 export default function FAQ() {
   return (
     <div className="font-sans text-navy bg-white">
@@ -26,14 +43,9 @@ export default function FAQ() {
           {FAQ_ITEMS.map((item, i) => (
             <div key={i} className="border-t border-[#E2E8F0] pt-8 first:border-t-0 first:pt-0">
               <h2 className="text-xl font-semibold text-navy mb-4">{item.q}</h2>
-              {item.a.map((p, pi) => (
-                <p key={pi} className="text-[15px] text-slate leading-[1.75] mb-3 last:mb-0">{p}</p>
+              {item.a.map((para, pi) => (
+                <FaqParagraph key={pi} para={para} />
               ))}
-              {item.backLink && (
-                <Link to={item.backLink.path} className="inline-block mt-3 text-sm text-navy underline font-medium">
-                  {item.backLink.label}
-                </Link>
-              )}
             </div>
           ))}
         </div>

@@ -1,7 +1,10 @@
 // FAQ content — every answer sourced from confirmed portal facts or real,
 // named regulatory authorities provided directly. Nothing here is invented.
-// Optional `backLink` field renders a return link on a specific item —
-// used on item 2 to link back to Who We Serve, per direct instruction.
+//
+// Item 2's first paragraph uses a special array-of-parts form instead of a
+// plain string, so FAQ.jsx can render "Who We Serve" as an inline link in
+// its original sentence position. Marked with `whoWeServeLink: true` so
+// FAQ.jsx knows to treat that specific paragraph differently.
 export const FAQ_ITEMS = [
   {
     q: "What is PCM, and what kind of market is it?",
@@ -12,12 +15,12 @@ export const FAQ_ITEMS = [
   },
   {
     q: "Who does CoreG actually serve?",
+    whoWeServeLink: true,
     a: [
-      "Three groups, described in full on our Who We Serve page: Banks moving instruments that need an auditable record, Asset Holders who need verification handled to institutional standard, and PCM Participants — intermediaries and referrers, including both Licensed Brokers and Non-Licensed Brokers.",
+      { before: "Three groups, described in full on our ", linkText: "Who We Serve", after: " page: Banks moving instruments that need an auditable record, Asset Holders who need verification handled to institutional standard, and PCM Participants — intermediaries and referrers, including both Licensed Brokers and Non-Licensed Brokers." },
       "The distinction between Licensed and Non-Licensed Brokers reflects real regulatory status, not an internal ranking — both categories can participate, and the governed pipeline applies identically to transactions either brings in. Licensing status is verified against the primary authorities described below.",
       "Licensed Brokers are verified against three primary authorities. The SEC (Securities and Exchange Commission) sets the federal laws governing broker-dealer activity — any firm conducting securities business in the U.S. must register with the SEC unless a specific exemption applies. FINRA (Financial Industry Regulatory Authority) is the self-regulatory organization that administers that registration day to day: it sets conduct rules and runs the qualification exams — the SIE, Series 7, Series 63, and similar — that actually certify an individual broker. Where a professional also acts as an investment adviser, IAPD (Investment Adviser Public Disclosure) provides the public record covering that side of their registration as well.",
     ],
-    backLink: { label: "Back to Who We Serve", path: "/who-we-serve" },
   },
   {
     q: "Can sanctioned banks participate on the platform?",
