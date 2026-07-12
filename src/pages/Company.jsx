@@ -48,7 +48,7 @@ export default function Company() {
         </div>
       </section>
 
-      {/* LEADERSHIP — final bio text, provided verbatim. */}
+      {/* LEADERSHIP — finalized bio, provided verbatim, 3 paragraphs. */}
       <section className="bg-mist px-8 py-20 border-t border-[#E2E8F0]">
         <div className="max-w-[720px] mx-auto">
           <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-8">Leadership</div>
@@ -56,21 +56,31 @@ export default function Company() {
             <div className="mb-1 text-xs font-mono text-gold uppercase tracking-wide">Chief Executive Officer</div>
             <h2 className="font-display text-2xl font-medium text-navy mb-4">Todd Morgan</h2>
             <p className="text-[15px] text-slate leading-[1.75] mb-4">
-              Todd Morgan serves as Chief Executive Officer of CoreG, where he leads the
-              company's strategic direction, corporate growth, and day-to-day operations.
-              He is responsible for building the executive leadership team, including the
-              appointment of the Chief Financial Officer and Chief Technology Officer, and
-              for establishing the Company's Board of Directors. He will serve as Chairman
-              of the Board until an independent Chairman is appointed.
+              Todd Morgan serves as Chief Executive Officer and Chairman of the Board of
+              CoreG, where he leads the Firm's strategy, growth, and execution. He is
+              responsible for advancing CoreG's long-term vision, building its executive
+              leadership team, and establishing a new standard for private capital markets
+              infrastructure.
+            </p>
+            <p className="text-[15px] text-slate leading-[1.75] mb-4">
+              Mr. Morgan brings executive leadership experience spanning federal
+              contracting, National Intelligence and defense programs, and multi-entity
+              business operations. Throughout his career, he has operated in complex,
+              high-accountability environments where trust, verification, governance, and
+              disciplined execution are essential to mission success. These experiences
+              shaped his approach to building institutional frameworks designed to create
+              greater transparency, accountability, and confidence in critical
+              decision-making environments.
             </p>
             <p className="text-[15px] text-slate leading-[1.75]">
-              Mr. Morgan's background spans executive leadership in federal contracting,
-              supporting National Intelligence and defense organizations, as well as
-              leadership across multi-entity business operations. He is the architect of
-              the governance infrastructure that underpins CoreG, leading the research,
-              development, and commercialization of the Company's AI governance platform.
-              His work is focused on advancing enterprise governance, identity, and trust
-              infrastructure for autonomous AI systems.
+              Under his leadership, CoreG is redefining private capital markets
+              infrastructure by embedding verification, governance, and accountability as
+              foundational elements of every transaction. CoreG was built on the principle
+              that verification only matters when it holds under pressure. When critical
+              standards can be bypassed, they become liabilities waiting to surface. By
+              establishing enforceable standards throughout the investment lifecycle, CoreG
+              enables investors, enterprises, and market participants to operate with
+              greater confidence, transparency, and trust.
             </p>
           </div>
         </div>
