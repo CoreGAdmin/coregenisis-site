@@ -72,9 +72,10 @@ export default function Company() {
               Board until a successor chairman is identified.
             </p>
             <p className="text-[14px] text-slateLt leading-[1.75]">
-              His work on CoreG follows the same governance discipline described
-              throughout this site — building the operating structure deliberately,
-              rather than assembling it faster than it can be verified.
+              His background spans executive leadership in federal contracting
+              across National Intelligence and defense sectors, multi-entity
+              operational leadership, and governance-framework work that led
+              directly into CoreIdentity and, through it, into CoreG.
             </p>
           </div>
         </div>
