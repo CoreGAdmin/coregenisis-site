@@ -25,3 +25,12 @@ export const SERVES = [
   { label: "PCM Participants",
     body: "Intermediaries and referrers in private capital markets who need a compliant pipeline they can plug into — including Licensed Brokers and Non-Licensed Brokers (see FAQ for details)." },
 ];
+
+export const INSTITUTIONAL_CLIENTS = [
+  { label: "Family Offices",
+    body: "Principals managing multi-generational wealth who need asset verification and transaction governance handled to the same standard as an institution, without an institution's overhead." },
+  { label: "Private Equity",
+    body: "Firms moving instruments and collateral through deal structures that need an auditable record from first contact through close, not reconstructed after the fact." },
+  { label: "Hedge Funds",
+    body: "Funds requiring rapid, governed verification on high-value positions — speed without skipping a gate." },
+];
