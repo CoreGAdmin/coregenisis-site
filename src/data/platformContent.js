@@ -1,47 +1,47 @@
-// Deep content for the four capability sections on the Platform page.
-// Each maps to the specific pipeline stages it covers, so the page reads as
-// ONE governed pipeline with four zoomed-in views — not four separate
-// products. No fabricated metrics; every claim here is a mechanism claim
-// ("what happens, what's checked"), not a traction claim.
+// Real content for the Platform page's four deep sections — mapped to the
+// ACTUAL 8-stage transaction-centric pipeline (confirmed against portal
+// build history), not the invented stage names used earlier. Each section
+// groups two real stages, same "one pipeline, four zoomed-in views" logic
+// as before — just now grounded in the real system.
 export const PLATFORM_SECTIONS = [
   {
-    id: "onboarding",
-    stages: ["Onboarding", "KYC / AML"],
-    eyebrow: "Client Intake & Compliance Screening",
+    id: "intake-kyc",
+    stages: ["Intake", "KYC"],
+    eyebrow: "Intake & KYC",
     title: "Nothing enters the pipeline unverified.",
     paragraphs: [
-      "Every relationship begins with structured intake — not a form that gets filed away, but the first governed checkpoint in the pipeline. Identity verification and anti-money-laundering screening run as a single sequence, and neither is treated as complete until the other clears.",
-      "This is where \"governed\" starts meaning something concrete: onboarding isn't a formality that happens before the real process begins. It's stage one of the same enforcement chain that runs through registration, funding, and reporting. A client who hasn't cleared KYC/AML has no path to any later stage — there's no side door.",
+      "Every transaction begins with structured intake — client, asset context, and transaction details captured against the same reference data the rest of the pipeline uses. KYC runs as the next governed checkpoint, not a formality that happens before the real process begins.",
+      "This is where the pipeline's ownership model matters concretely: intake explicitly captures whether the owner and beneficiary are the same party, and if not, requires beneficiary information before the transaction can advance. There's no path through the pipeline that skips this distinction.",
     ],
   },
   {
-    id: "registration",
-    stages: ["Asset Registration", "Proof of Funds"],
-    eyebrow: "Asset Registration & Proof of Funds",
-    title: "The asset and the money behind it, verified together.",
+    id: "asset-appraisal",
+    stages: ["Asset / Collateral", "Appraisal / Valuation"],
+    eyebrow: "Asset / Collateral & Appraisal",
+    title: "The asset registered, and independently appraised.",
     paragraphs: [
-      "High-value instruments are registered against a documented chain of proof — not asserted, evidenced. Proof of funds is checked against the specific asset it's meant to back, not accepted as a generic balance statement.",
-      "This is the stage where most informal private-markets processes quietly lose rigor, because verifying provenance is slower than taking a document at face value. CoreG treats that verification as a hard gate: an asset without cleared proof of funds does not advance, regardless of who's asking.",
+      "Assets are registered against the transaction they back, drawn from admin-maintained reference data covering asset types, backing classifications, and the specific securities instrument involved — MTN, SBLC, 144A, or other structures captured explicitly rather than assumed.",
+      "Appraisal and valuation follow as a distinct, gated stage — the asset's registered value isn't accepted at intake, it's verified before the transaction can move further into the pipeline.",
     ],
   },
   {
-    id: "pipeline",
-    stages: ["OFAC Screen", "Pipeline Gate", "Proof Pack"],
-    eyebrow: "Governed Pipeline Advancement",
-    title: "Eight stages. No stage can be bypassed.",
+    id: "monetization-securitization",
+    stages: ["Monetization", "Securitization"],
+    eyebrow: "Monetization & Securitization",
+    title: "The stages where structure gets tested.",
     paragraphs: [
-      "Once onboarding and asset verification clear, the transaction enters the governed pipeline itself — sanctions screening, gated advancement, and a cryptographic proof pack generated at every decision point. This is the enforcement layer that makes the rest of the platform meaningful: verification that can be skipped under pressure isn't verification, it's theater.",
-      "Every gate produces a record, not just a pass/fail. That record is what makes the pipeline auditable after the fact, not just compliant in the moment it happened.",
+      "Once an asset clears appraisal, monetization and securitization advance the transaction through the same hard-gated model as every stage before it — no stage opens until the one before it has genuinely cleared, tracked and enforced at the transaction level, not the asset level alone.",
+      "Every document submitted at these stages is versioned, not overwritten — a resubmission creates a new version rather than erasing what was there before, so the record of what changed and when stays intact.",
     ],
   },
   {
-    id: "reporting",
-    stages: ["Reporting"],
-    eyebrow: "Regulatory Reporting",
-    title: "Built for reporting, not reconstructed for it.",
+    id: "tokenization-completed",
+    stages: ["Tokenization", "Completed"],
+    eyebrow: "Tokenization & Completion",
+    title: "The pipeline ends in a record, not just a close.",
     paragraphs: [
-      "Every decision made earlier in the pipeline — every check, every gate, every proof pack — is structured from the moment it's created to serve as a reporting record. Nothing has to be pieced together after the fact from logs, emails, or someone's memory of what happened.",
-      "That distinction matters more than it sounds: reconstructed compliance histories are the norm in private capital markets, and they're the first thing a real audit finds thin. CoreG's reporting layer exists because the pipeline was designed around it from stage one, not bolted on afterward.",
+      "Tokenization is the final structural stage before a transaction is marked complete. Completion isn't a status flip — it's the point where every prior stage's record becomes the transaction's permanent audit trail.",
+      "Because every stage along the way — intake, KYC, appraisal, monetization, securitization — was built to produce a record at the moment it happened, the completed transaction doesn't need to be reconstructed for reporting. It already is one.",
     ],
   },
 ];

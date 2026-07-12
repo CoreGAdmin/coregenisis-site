@@ -1,17 +1,20 @@
+// PIPELINE: the actual 8 stages from the transaction-centric model shipped
+// live to app.coregenisis.com (pcm_pipeline_stage_definitions). NOT
+// invented — confirmed against portal build history before use.
 export const PIPELINE = [
-  "Onboarding", "KYC / AML", "Asset Registration", "Proof of Funds",
-  "OFAC Screen", "Pipeline Gate", "Proof Pack", "Reporting",
+  "Intake", "KYC", "Asset / Collateral", "Appraisal / Valuation",
+  "Monetization", "Securitization", "Tokenization", "Completed",
 ];
 
 export const CAPABILITIES = [
-  { label: "Onboarding & KYC/AML",
-    body: "Client intake, identity verification, and anti-money-laundering checks run as one governed sequence — no stage advances until the one before it clears." },
-  { label: "Asset Registration & Proof of Funds",
-    body: "High-value assets are registered and verified against documented proof of funds before they can move further into the pipeline." },
-  { label: "Governed Pipeline Advancement",
-    body: "An eight-stage transaction pipeline with hard gates at every step. No stage can be skipped, and no advancement happens without a passing check." },
-  { label: "Regulatory Reporting",
-    body: "Every decision produces a record built for reporting, not reconstructed after the fact." },
+  { label: "Intake & KYC",
+    body: "Client and transaction intake, identity verification, and compliance checks run as one governed sequence — no later stage opens until intake and KYC both clear." },
+  { label: "Asset / Collateral & Appraisal",
+    body: "Assets are registered against the transaction and independently appraised before valuation is accepted — not asserted, verified against the collateral actually backing the transaction." },
+  { label: "Monetization & Securitization",
+    body: "Once appraised, an asset moves through monetization and securitization under the same gated model — each stage requires the one before it to have genuinely cleared, not just been marked complete." },
+  { label: "Tokenization & Completion",
+    body: "The final stages produce a completed, auditable transaction record — built for reporting from the first stage, not reconstructed from it after the fact." },
 ];
 
 export const SERVES = [
