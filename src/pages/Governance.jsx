@@ -25,13 +25,16 @@ export default function Governance() {
 
       <section className="bg-navyCard px-8 py-16 border-y border-navyLine">
         <div className="max-w-[1080px] mx-auto">
-          <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-8 text-center">Eleven Agents, Four Functions</div>
+          <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-2 text-center">Eleven Agents, Four Functions</div>
+          <p className="text-[13px] text-slateLt text-center mb-8 max-w-[480px] mx-auto">
+            Not a sequence — four functional groups the eleven agents divide into.
+          </p>
           <div className="grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(240px,1fr))]">
             {AGENT_CATEGORIES.map((cat) => (
               <div key={cat.label} className="bg-navy border border-navyLine rounded-lg p-6">
-                <div className="flex items-baseline gap-2 mb-3">
-                  <span className="font-display text-3xl font-medium text-gold">{cat.count}</span>
-                  <span className="text-sm font-semibold text-white">{cat.label}</span>
+                <div className="mb-3">
+                  <div className="text-sm font-semibold text-white mb-1">{cat.label}</div>
+                  <div className="font-mono text-xs text-gold uppercase tracking-wide">{cat.count} agent{cat.count !== 1 ? "s" : ""}</div>
                 </div>
                 <p className="text-[13px] text-slateLt leading-relaxed">{cat.detail}</p>
               </div>
