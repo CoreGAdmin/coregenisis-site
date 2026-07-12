@@ -1,6 +1,7 @@
 import PageNav from "../components/PageNav.jsx";
 import PageFooter from "../components/PageFooter.jsx";
 import { ComingSoonButton } from "../components/ComingSoonButton.jsx";
+import { Link } from "react-router-dom";
 import { SERVES } from "../data/content.js";
 
 export default function WhoWeServe() {
@@ -28,6 +29,11 @@ export default function WhoWeServe() {
             </div>
           ))}
         </div>
+      </section>
+      <section className="bg-white px-8 pb-16 text-center">
+        <p className="text-[14px] text-slate">
+          Licensed and Non-Licensed Broker distinctions — <Link to="/faq" className="text-navy underline font-medium">see FAQ for details</Link>.
+        </p>
       </section>
       <section className="bg-mist px-8 py-16 text-center border-t border-[#E2E8F0]">
         <div className="max-w-[600px] mx-auto">

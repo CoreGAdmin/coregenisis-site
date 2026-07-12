@@ -7,6 +7,7 @@ import Partners from "./pages/Partners.jsx";
 import Company from "./pages/Company.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 import TermsOfService from "./pages/TermsOfService.jsx";
+import FAQ from "./pages/FAQ.jsx";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/company" element={<Company />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/faq" element={<FAQ />} />
       </Routes>
     </BrowserRouter>
   );

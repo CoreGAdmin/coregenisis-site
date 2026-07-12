@@ -23,5 +23,5 @@ export const SERVES = [
   { label: "Asset Holders",
     body: "Principals and their representatives who need proof-of-funds and asset verification handled to institutional standard." },
   { label: "PCM Participants",
-    body: "Intermediaries and referrers in private capital markets who need a compliant pipeline they can plug into." },
+    body: "Intermediaries and referrers in private capital markets who need a compliant pipeline they can plug into — including Licensed Brokers and Non-Licensed Brokers (see FAQ for details)." },
 ];
