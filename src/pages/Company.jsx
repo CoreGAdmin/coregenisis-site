@@ -8,7 +8,9 @@ export default function Company() {
     <div className="font-sans text-navy bg-white">
       <PageNav />
 
-      {/* HERO — mission/thesis, no bio, no team roster */}
+      {/* HERO — mission/thesis. Leadership section below names the CEO,
+          per direct instruction reversing the page's original no-bio
+          constraint. */}
       <section className="bg-navy px-8 pt-20 pb-16 text-center">
         <div className="max-w-[760px] mx-auto">
           <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">Company</div>
@@ -22,10 +24,9 @@ export default function Company() {
         </div>
       </section>
 
-      {/* MISSION — the actual thesis, plus CoreIdentity relationship woven in
-          as real content (not just the badge) per direct instruction. Kept
-          as a paragraph within this section, not a standalone section, so
-          it doesn't outweigh CoreG's own identity on CoreG's own page. */}
+      {/* MISSION — unchanged from original build. CoreIdentity relationship
+          woven in as real content, kept as a paragraph so it doesn't
+          outweigh CoreG's own identity on CoreG's own page. */}
       <section className="bg-white px-8 py-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[16px] text-slate leading-[1.8] mb-6">
@@ -48,6 +49,34 @@ export default function Company() {
             does. We build to that bar, plus a level of margin — because the cost of being
             wrong about compliance is never symmetric with the cost of being careful.
           </p>
+        </div>
+      </section>
+
+      {/* LEADERSHIP — CEO named per direct instruction. Board of Directors
+          described as an active plan Todd is executing, not an already-
+          seated body — avoids overclaiming organizational maturity that
+          doesn't exist yet. Summary kept subtle: declarative, no
+          promotional language, matching the rest of the page's voice. */}
+      <section className="bg-mist px-8 py-20 border-t border-[#E2E8F0]">
+        <div className="max-w-[720px] mx-auto">
+          <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-8">Leadership</div>
+          <div className="bg-white border border-[#E2E8F0] rounded-lg p-8">
+            <div className="mb-1 text-xs font-mono text-gold uppercase tracking-wide">Chief Executive Officer</div>
+            <h2 className="font-display text-2xl font-medium text-navy mb-4">Todd Morgan</h2>
+            <p className="text-[15px] text-slate leading-[1.75] mb-4">
+              Todd Morgan has been appointed Chief Executive Officer to lead CoreG. His
+              direct responsibilities include the growth of the firm, day-to-day
+              operations, and building out the leadership team — including a Chief
+              Financial Officer and Chief Technology Officer. He is also responsible for
+              appointing CoreG's Board of Directors, and will serve as Chairman of the
+              Board until a successor chairman is identified.
+            </p>
+            <p className="text-[14px] text-slateLt leading-[1.75]">
+              His work on CoreG follows the same governance discipline described
+              throughout this site — building the operating structure deliberately,
+              rather than assembling it faster than it can be verified.
+            </p>
+          </div>
         </div>
       </section>
 
