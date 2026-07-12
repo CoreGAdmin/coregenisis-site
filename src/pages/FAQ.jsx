@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PageNav from "../components/PageNav.jsx";
 import PageFooter from "../components/PageFooter.jsx";
 import { ComingSoonButton } from "../components/ComingSoonButton.jsx";
@@ -28,6 +29,11 @@ export default function FAQ() {
               {item.a.map((p, pi) => (
                 <p key={pi} className="text-[15px] text-slate leading-[1.75] mb-3 last:mb-0">{p}</p>
               ))}
+              {item.backLink && (
+                <Link to={item.backLink.path} className="inline-block mt-3 text-sm text-navy underline font-medium">
+                  {item.backLink.label}
+                </Link>
+              )}
             </div>
           ))}
         </div>

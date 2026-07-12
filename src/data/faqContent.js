@@ -1,5 +1,7 @@
-// FAQ content — every answer sourced from confirmed portal facts or
-// explicitly marked mechanism-only/pending. Nothing here is invented.
+// FAQ content — every answer sourced from confirmed portal facts or real,
+// named regulatory authorities provided directly. Nothing here is invented.
+// Optional `backLink` field renders a return link on a specific item —
+// used on item 2 to link back to Who We Serve, per direct instruction.
 export const FAQ_ITEMS = [
   {
     q: "What is PCM, and what kind of market is it?",
@@ -12,14 +14,16 @@ export const FAQ_ITEMS = [
     q: "Who does CoreG actually serve?",
     a: [
       "Three groups, described in full on our Who We Serve page: Banks moving instruments that need an auditable record, Asset Holders who need verification handled to institutional standard, and PCM Participants — intermediaries and referrers, including both Licensed Brokers and Non-Licensed Brokers.",
-      "The distinction between Licensed and Non-Licensed Brokers reflects real regulatory status, not an internal ranking — both categories can participate, and the governed pipeline applies identically to transactions either brings in. [We're finalizing the specific licensing body/regime language for this distinction — check back or ask directly.]",
+      "The distinction between Licensed and Non-Licensed Brokers reflects real regulatory status, not an internal ranking — both categories can participate, and the governed pipeline applies identically to transactions either brings in. Licensing status is verified against the primary authorities described below.",
+      "Licensed Brokers are verified against three primary authorities. The SEC (Securities and Exchange Commission) sets the federal laws governing broker-dealer activity — any firm conducting securities business in the U.S. must register with the SEC unless a specific exemption applies. FINRA (Financial Industry Regulatory Authority) is the self-regulatory organization that administers that registration day to day: it sets conduct rules and runs the qualification exams — the SIE, Series 7, Series 63, and similar — that actually certify an individual broker. Where a professional also acts as an investment adviser, IAPD (Investment Adviser Public Disclosure) provides the public record covering that side of their registration as well.",
     ],
+    backLink: { label: "Back to Who We Serve", path: "/who-we-serve" },
   },
   {
     q: "Can sanctioned banks participate on the platform?",
     a: [
       "No. Every party in a transaction — including the institutions behind it — is screened against sanctions lists before any stage involving them can advance, and that screening runs continuously, not just once at onboarding. A bank or institution that appears on an applicable sanctions list cannot move through the governed pipeline.",
-      "[The specific sanctions regime and list we screen against is being finalized for publication here — this answer describes the mechanism; the enumerated list is not yet published on this page.]",
+      "That screening is validated against three official, real-time searchable databases. US OFAC (Office of Foreign Assets Control) maintains the SDN — Specially Designated Nationals — List; a bank placed on it is effectively cut off from the U.S. financial system and from dealing in U.S. dollars. The European Union maintains its own Consolidated List of Financial Sanctions Targets, covering EU-level restrictions. The United Nations Security Council issues sanctions of its own, typically global asset freezes aimed at entities tied to terrorism, weapons proliferation, or specific conflict zones. A bank appearing on any of the three blocks the transaction at the gate — there's no partial-pass across jurisdictions.",
     ],
   },
   {

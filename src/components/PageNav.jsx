@@ -9,6 +9,7 @@ const NAV = [
   { label: "Who We Serve", path: "/who-we-serve" },
   { label: "Partners", path: "/partners" },
   { label: "Company", path: "/company" },
+  { label: "FAQ", path: "/faq" },
 ];
 
 // Single source of truth for the nav shell across all six pages. Request
