@@ -71,11 +71,14 @@ export default function Company() {
               appointing CoreG's Board of Directors, and will serve as Chairman of the
               Board until a successor chairman is identified.
             </p>
-            <p className="text-[14px] text-slateLt leading-[1.75]">
+            <p className="text-[15px] text-slate leading-[1.75]">
               His background spans executive leadership in federal contracting
               across National Intelligence and defense sectors, multi-entity
               operational leadership, and governance-framework work that led
-              directly into CoreIdentity and, through it, into CoreG.
+              into CoreIdentity — founding R&D and platform development
+              beginning in 2025, with CoreIdentity Development Group Inc.
+              formally incorporated in February 2026. CoreG runs on the
+              governance infrastructure that build produced.
             </p>
           </div>
         </div>
