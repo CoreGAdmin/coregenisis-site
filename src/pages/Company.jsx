@@ -11,7 +11,7 @@ export default function Company() {
       {/* HERO — mission/thesis. Leadership section below names the CEO. */}
       <section className="bg-navy px-8 pt-20 pb-16 text-center">
         <div className="max-w-[760px] mx-auto">
-          <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">Company</div>
+          <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">The Firm</div>
           <h1 className="font-display text-[clamp(32px,4.5vw,50px)] font-medium leading-[1.15] text-white mb-6">
             Private capital markets, held to the standard they should have had from the start.
           </h1>
