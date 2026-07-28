@@ -48,7 +48,7 @@ export default function Company() {
         </div>
       </section>
 
-      {/* LEADERSHIP — finalized bio, provided verbatim, 3 paragraphs. */}
+      {/* LEADERSHIP — final bio, provided verbatim, 4 paragraphs. */}
       <section className="bg-mist px-8 py-20 border-t border-[#E2E8F0]">
         <div className="max-w-[720px] mx-auto">
           <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-8">Leadership</div>
@@ -56,31 +56,35 @@ export default function Company() {
             <div className="mb-1 text-xs font-mono text-gold uppercase tracking-wide">Chief Executive Officer</div>
             <h2 className="font-display text-2xl font-medium text-navy mb-4">Todd Morgan</h2>
             <p className="text-[15px] text-slate leading-[1.75] mb-4">
-              Todd Morgan serves as Chief Executive Officer and Chairman of the Board of
-              CoreG, where he leads the Firm's strategy, growth, and execution. He is
-              responsible for advancing CoreG's long-term vision, building its executive
-              leadership team, and establishing a new standard for private capital markets
-              infrastructure.
+              Todd Morgan brings more than 30 years of executive leadership experience
+              across highly regulated, multi-stakeholder operating environments where
+              operational precision, institutional accountability, and disciplined
+              execution were fundamental to mission success. Throughout his career, he has
+              led complex organizations, directed mission-critical programs exceeding $100
+              million, and built governance frameworks designed to operate reliably in
+              environments where failure was not an acceptable outcome.
             </p>
             <p className="text-[15px] text-slate leading-[1.75] mb-4">
-              Mr. Morgan brings executive leadership experience spanning federal
-              contracting, National Intelligence and defense programs, and multi-entity
-              business operations. Throughout his career, he has operated in complex,
-              high-accountability environments where trust, verification, governance, and
-              disciplined execution are essential to mission success. These experiences
-              shaped his approach to building institutional frameworks designed to create
-              greater transparency, accountability, and confidence in critical
-              decision-making environments.
+              He is the originator of the Trust Infrastructure discipline and the
+              Autonomous Enterprise Governance (AEG) doctrine, establishing the governance
+              principles for autonomous enterprises and the institutional trust required to
+              operate them at scale.
+            </p>
+            <p className="text-[15px] text-slate leading-[1.75] mb-4">
+              As Chief Executive Officer and Chairman of the Board of CoreG, Mr. Morgan
+              leads the Firm's strategic direction, growth, and day-to-day operations while
+              overseeing the development of its executive leadership team and Board of
+              Directors. His focus is building the institutional infrastructure required to
+              bring verifiable governance, operational integrity, and accountability to the
+              next generation of AI-enabled private capital markets.
             </p>
             <p className="text-[15px] text-slate leading-[1.75]">
-              Under his leadership, CoreG is redefining private capital markets
-              infrastructure by embedding verification, governance, and accountability as
-              foundational elements of every transaction. CoreG was built on the principle
-              that verification only matters when it holds under pressure. When critical
-              standards can be bypassed, they become liabilities waiting to surface. By
-              establishing enforceable standards throughout the investment lifecycle, CoreG
-              enables investors, enterprises, and market participants to operate with
-              greater confidence, transparency, and trust.
+              Under his leadership, CoreG operates on a single governing principle:
+              verification is only meaningful when it cannot be bypassed. Every material
+              action progresses through defined governance controls that produce
+              contemporaneous, auditable evidence before advancing. That operating
+              discipline establishes the trust, transparency, and institutional confidence
+              upon which the Firm is built.
             </p>
           </div>
         </div>
