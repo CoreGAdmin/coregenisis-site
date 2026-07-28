@@ -65,10 +65,10 @@ export default function Company() {
               environments where failure was not an acceptable outcome.
             </p>
             <p className="text-[15px] text-slate leading-[1.75] mb-4">
-              He is the originator of the Trust Infrastructure discipline and the
-              Autonomous Enterprise Governance (AEG) doctrine, establishing the governance
-              principles for autonomous enterprises and the institutional trust required to
-              operate them at scale.
+              He is the architect of the Trust Infrastructure discipline and the
+              Autonomous Execution Governance (AEG) doctrine, establishing the governance
+              principles and institutional trust model that enable autonomous execution at
+              enterprise scale.
             </p>
             <p className="text-[15px] text-slate leading-[1.75] mb-4">
               As Chief Executive Officer and Chairman of the Board of CoreG, Mr. Morgan
@@ -80,7 +80,8 @@ export default function Company() {
             </p>
             <p className="text-[15px] text-slate leading-[1.75]">
               Under his leadership, CoreG operates on a single governing principle:
-              verification is only meaningful when it cannot be bypassed. Every material
+              verification only matters when it holds under pressure. When critical
+              standards can be bypassed, they become liabilities waiting to surface. Every material
               action progresses through defined governance controls that produce
               contemporaneous, auditable evidence before advancing. That operating
               discipline establishes the trust, transparency, and institutional confidence
