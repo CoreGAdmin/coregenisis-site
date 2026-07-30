@@ -53,35 +53,22 @@ export default function WhoWeServe() {
             ))}
           </div>
 
-          {/* Cryptocurrency — standalone WIDE card, per direct confirmation.
-              Card is the summary; the FAQ page has the deeper explanation
-              (both kept intentionally, not duplicated verbatim). */}
+          {/* Cryptocurrency — standalone card, now a REAL summary: one
+              short paragraph naming custodial, non-custodial, and
+              forensics, linking to the FAQ for the actual depth rather
+              than restating it. */}
           <div className="bg-white border border-[#E2E8F0] rounded-lg p-8">
-            <div className="flex flex-wrap items-baseline gap-3 mb-4">
+            <div className="flex flex-wrap items-baseline gap-3 mb-3">
               <h3 className="text-lg font-semibold text-navy">Cryptocurrency</h3>
               <span className="font-mono text-[11px] text-gold uppercase tracking-wide border border-gold/40 rounded-full px-2.5 py-0.5">
                 Custodial &amp; Non-Custodial
               </span>
             </div>
-            <p className="text-[14px] text-slate leading-relaxed mb-3">
-              CoreG serves both custodial managers, who hold client assets directly under a
-              regulated custody model, and non-custodial managers, who direct assets while
-              clients retain control of their own keys. Both move through the same governed
-              pipeline as every other institutional client — verification doesn't relax
-              because the asset is digital.
-            </p>
-            <p className="text-[14px] text-slate leading-relaxed mb-3">
-              Institutional participation in digital assets has moved from early adoption to
-              core infrastructure — custody, compliance, and verification are now evaluated
-              by the same standards as any other regulated financial asset, not treated as a
-              separate, lower-scrutiny category. That shift is what makes governed
-              verification necessary here, not optional.
-            </p>
             <p className="text-[14px] text-slate leading-relaxed">
-              CoreG's verification layer extends to crypto forensics — tracing asset
-              provenance, flagging wallet-level risk indicators, and applying the same
-              screening discipline used across every other asset class to intermediaries
-              operating in digital markets. See the FAQ for how this works in more depth.
+              CoreG serves both custodial and non-custodial managers through the same governed
+              pipeline as every other institutional client, with a verification layer that
+              extends to crypto forensics. See the full breakdown in the{" "}
+              <Link to="/faq" className="text-navy underline font-medium">FAQ</Link>.
             </p>
           </div>
         </div>
