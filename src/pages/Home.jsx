@@ -41,7 +41,7 @@ export default function Home() {
             CoreG is an authorized intermediary<br />serving private capital markets.
           </h1>
           <p className="text-lg text-ice/85 max-w-[660px] mx-auto leading-relaxed">
-            CoreG facilitates qualifying private capital transactions through a disciplined operating standard designed to promote confidence, integrity, and accountability from first engagement through close.
+            CoreG facilitates qualifying private capital transactions through a disciplined operating standard built to ensure confidence, integrity, and accountability from first engagement through close.
           </p>
         </div>
       </section>
