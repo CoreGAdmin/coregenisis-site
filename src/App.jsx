@@ -10,12 +10,15 @@ import Contact from "./pages/Contact.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 import TermsOfService from "./pages/TermsOfService.jsx";
+import NotFound from "./pages/NotFound.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import SiteMetadata from "./components/SiteMetadata.jsx";
 
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <SiteMetadata />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/who-we-are" element={<WhoWeAre />} />
@@ -29,13 +32,12 @@ export default function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
 
-        {/* Legacy v3 routes remain valid during the v4 migration. */}
         <Route path="/company" element={<Navigate to="/who-we-are" replace />} />
         <Route path="/governance" element={<Navigate to="/how-we-work" replace />} />
         <Route path="/who-we-serve" element={<Navigate to="/who-we-are" replace />} />
         <Route path="/partners" element={<Navigate to="/contact" replace />} />
         <Route path="/faq" element={<Navigate to="/insights/faq" replace />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

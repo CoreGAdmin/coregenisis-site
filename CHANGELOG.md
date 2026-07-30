@@ -1,3 +1,9 @@
+# CoreG v4.1.0
+
+- Added the original executive portrait and completed the Leadership biography presentation.
+- Corrected CoreG's relationship language with CoreIdentity Technologies.
+- Added route-level SEO metadata, canonical URLs, social metadata, structured data, sitemap, robots, favicon, and a true 404 page.
+
 # Changelog
 
 ## 4.0.0-alpha.2 — Institutional Homepage
