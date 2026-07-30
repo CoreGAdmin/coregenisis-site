@@ -13,51 +13,41 @@ export default function Home() {
         <div className="max-w-[880px] mx-auto text-center">
           <span className="inline-block font-mono text-xs tracking-[0.12em] text-gold uppercase
                            border border-gold rounded-full px-4 py-1.5 mb-7">
-            Private Capital Markets — Governed
+            Authorized Private Capital Markets Intermediary
           </span>
           <h1 className="font-display text-[clamp(36px,5.5vw,64px)] font-medium leading-[1.08] text-white mb-6">
-            Every stage of the transaction,<br/>verified before it moves.
+            CoreG is an authorized intermediary<br/>serving private capital markets.
           </h1>
           <p className="text-lg text-ice/85 max-w-[620px] mx-auto mb-11 leading-relaxed">
-            CoreG governs the full lifecycle of high-value asset transactions —
-            onboarding through reporting — with no stage that can be bypassed.
+            CoreG facilitates qualifying private capital transactions through a disciplined operating standard designed to promote confidence, integrity, and accountability from first engagement through close.
           </p>
           <div className="max-w-[880px] mx-auto mt-8"><PipelineBar /></div>
         </div>
       </section>
 
-      {/* WHY WE EXIST — elevated positioning: CoreG as the independent
-          trust layer between institutional counterparties, not just
-          governance software. Institutional register throughout, no
-          accusatory language, doctrine-style close. */}
       <section className="bg-white px-8 py-20">
         <div className="max-w-[820px] mx-auto">
-          <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-3">The Independent Trust Layer</div>
+          <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-3">Why CoreG Exists</div>
           <h2 className="font-display text-[28px] sm:text-[32px] font-medium text-navy mb-6 leading-tight">
-            Private capital markets don't have a truth problem because verification is difficult.
+            Private capital transactions require more from an intermediary.
           </h2>
-          <p className="text-[15px] text-slate leading-[1.75] mb-4">
-            They have one because verification is too often performed by parties whose
-            incentives are tied to closing the transaction. CoreG exists to be the
-            intermediary every transaction actually needs — performing due diligence,
-            running compliance, and standing behind referrals on behalf of the buyer, the
-            seller, and the principals, not just whichever side is paying.
+          <p className="text-[16px] text-slate leading-[1.8] mb-8">
+            CoreG exists because private capital transactions require an intermediary whose
+            responsibility extends beyond transaction execution to ensuring every transaction
+            is conducted with confidence, integrity, and accountability.
           </p>
-          <p className="text-[15px] text-slate leading-[1.75] mb-4">
-            Historically, unauthorized intermediaries have been able to insert themselves
-            into transactions by fabricating authority, inflating credentials, or
-            misrepresenting relationships. Once introduced into the transaction chain,
-            those claims often go independently unverified until significant time, cost,
-            or capital has already been committed. CoreG's governed pipeline exists
-            specifically to close that gap: every party, every credential, every claim
-            runs through the same verification gates before a transaction can advance.
-          </p>
-          <p className="text-[15px] text-slate leading-[1.75]">
-            Our operating requirement is Truth in Transactions. Every identity. Every
-            credential. Every authority. Every document. Every claim. Independently
-            verified before a transaction can advance. If a claim cannot be verified, it
-            does not move forward — regardless of who makes it or how much is at stake.
-          </p>
+          <div className="border-t border-[#E2E8F0] pt-8">
+            <div className="font-display text-[24px] font-medium text-navy mb-5">Truth in Transactions is our operating standard.</div>
+            <p className="text-[15px] text-slate leading-[1.8] mb-5">
+              Every identity. Every credential. Every authority. Every document. Every material claim.
+            </p>
+            <p className="text-[15px] text-slate leading-[1.8] mb-5">
+              Independently verified before a transaction can advance.
+            </p>
+            <p className="text-[15px] text-navy font-semibold leading-[1.8]">
+              If a claim cannot be independently verified, it does not become part of the transaction.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -86,12 +76,10 @@ export default function Home() {
           <div className="flex-1 min-w-[360px]">
             <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-3">Governance & Compliance</div>
             <h2 className="font-display text-[32px] font-medium text-white mb-5 leading-tight">
-              Eleven agents. Zero silent exceptions.
+              A governed standard behind every engagement.
             </h2>
             <p className="text-[15px] text-ice/85 leading-[1.7] mb-7">
-              Eleven specialized agents enforce compliance gates at every stage — screening
-              for sanctioned parties, verifying documentation, and producing a cryptographic
-              proof pack for every decision made. No stage advances on a silent pass.
+              CoreG operates under Trust Infrastructure and Autonomous Execution Governance provided by CoreIdentity Technologies. The underlying governance layer supports sanctions screening, document verification, controlled stage advancement, and auditable transaction records without redefining CoreG as a technology company.
             </p>
           </div>
           <div className="flex-1 min-w-[300px] grid gap-3.5">

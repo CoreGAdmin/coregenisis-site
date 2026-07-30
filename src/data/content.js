@@ -1,6 +1,6 @@
-// PIPELINE: the actual 8 stages from the transaction-centric model shipped
-// live to app.coregenisis.com (pcm_pipeline_stage_definitions). NOT
-// invented — confirmed against portal build history before use.
+// CoreG public-site content. The participant taxonomy is role-based so the
+// site describes how organizations engage in a transaction rather than
+// grouping them only by legal or organizational form.
 export const PIPELINE = [
   "Intake", "KYC", "Asset / Collateral", "Appraisal / Valuation",
   "Monetization", "Securitization", "Tokenization", "Completed",
@@ -18,19 +18,20 @@ export const CAPABILITIES = [
 ];
 
 export const SERVES = [
-  { label: "Banks",
-    body: "Institutions moving high-value instruments that need a governed, auditable transaction record from first contact to close." },
-  { label: "Asset Holders",
-    body: "Principals and their representatives who need proof-of-funds and asset verification handled to institutional standard." },
-  { label: "PCM Participants",
-    body: "Intermediaries and referrers in private capital markets who need a compliant pipeline they can plug into — including Licensed Brokers and Non-Licensed Brokers (see FAQ for details)." },
-];
-
-export const INSTITUTIONAL_CLIENTS = [
-  { label: "Family Offices",
-    body: "Principals managing multi-generational wealth who need asset verification and transaction governance handled to the same standard as an institution, without an institution's overhead." },
-  { label: "Private Equity",
-    body: "Firms moving instruments and collateral through deal structures that need an auditable record from first contact through close, not reconstructed after the fact." },
-  { label: "Hedge Funds",
-    body: "Funds requiring rapid, governed verification on high-value positions — speed without skipping a gate." },
+  {
+    label: "Capital Providers",
+    body: "Banks, family offices, hedge funds, private equity firms, digital asset funds, cryptocurrency banks, and other institutional investors providing capital into private market transactions. CoreG supports these organizations with governed transaction execution, institutional verification, and an auditable record from first engagement through close.",
+  },
+  {
+    label: "Transaction Principals",
+    body: "Asset owners, issuers, trusts, and authorized representatives bringing assets, collateral, or investment opportunities into private capital markets. CoreG helps ensure that identity, authority, documentation, and transaction readiness are verified to institutional standards.",
+  },
+  {
+    label: "Transaction Participants",
+    body: "Licensed brokers, non-licensed brokers, intermediaries, introducers, and advisors participating in private capital transactions. CoreG provides a governed operating environment that enables participants to engage through a consistent, compliant transaction process.",
+  },
+  {
+    label: "Digital Asset Participants",
+    body: "Custodial and non-custodial institutions, cryptocurrency banks, exchanges, digital asset funds, qualified token issuers, and other organizations transacting in digital assets. Through secure API integrations with supported cryptocurrency banks, digital asset custodians, and banking platforms, CoreG extends institutional verification into the digital asset ecosystem, including wallet validation and cryptocurrency forensic analysis.",
+  },
 ];

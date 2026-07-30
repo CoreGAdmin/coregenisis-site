@@ -13,37 +13,24 @@ export default function Company() {
         <div className="max-w-[760px] mx-auto">
           <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">Our Firm</div>
           <h1 className="font-display text-[clamp(32px,4.5vw,50px)] font-medium leading-[1.15] text-white mb-6">
-            Private capital markets, held to the standard they should have had from the start.
+            An authorized intermediary built for confidence, integrity, and accountability.
           </h1>
           <p className="text-lg text-ice/85 max-w-[620px] mx-auto leading-relaxed">
-            CoreG exists because verification that can be skipped under pressure isn't
-            verification — it's a liability waiting for the wrong moment to surface.
+            CoreG serves private capital markets through a disciplined operating standard designed to strengthen the integrity of every engagement.
           </p>
         </div>
       </section>
 
-      {/* MISSION (narrative) — unchanged from original build. */}
       <section className="bg-white px-8 py-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[16px] text-slate leading-[1.8] mb-6">
-            Most private capital markets infrastructure treats compliance as a step that
-            happens alongside a transaction — checked, filed, and moved past. CoreG treats
-            it as the thing the transaction is built on top of. Every stage of a governed
-            pipeline exists because the stage before it cleared, not because someone signed
-            off that it probably did.
+            CoreG is an authorized intermediary serving institutional and qualified participants across private capital markets. We facilitate transactions without originating the assets, instruments, or investment opportunities that enter our process.
           </p>
           <p className="text-[16px] text-slate leading-[1.8] mb-6">
-            That standard doesn't come from CoreG alone. The enforcement layer described
-            throughout this site — the eleven agents, the cryptographic proof packs, the
-            hard gates that can't be bypassed — runs on infrastructure built and governed
-            by CoreIdentity, a company built specifically to hold autonomous systems to a
-            provable standard rather than an assumed one. CoreG is what that infrastructure
-            looks like applied to private capital markets.
+            Our responsibility extends beyond transaction execution. CoreG applies structured verification, documentation, due diligence, and transaction oversight so that identities, authority, assets, and material claims are addressed before a transaction advances.
           </p>
           <p className="text-[16px] text-slate leading-[1.8]">
-            We don't set our own bar. The regulatory environment our clients operate in
-            does. We build to that bar, plus a level of margin — because the cost of being
-            wrong about compliance is never symmetric with the cost of being careful.
+            CoreG is governed by Trust Infrastructure and Autonomous Execution Governance provided by CoreIdentity Technologies. That relationship strengthens how CoreG operates while preserving a clear distinction: CoreG is the intermediary; CoreIdentity owns and operates the governance infrastructure beneath it.
           </p>
         </div>
       </section>
@@ -57,18 +44,13 @@ export default function Company() {
           <div>
             <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-3">Our Mission</div>
             <p className="text-[17px] text-navy leading-[1.7] font-medium">
-              To establish trust as an operational standard in private capital markets by
-              independently governing identity, verification, due diligence, compliance,
-              and transaction execution — ensuring every material claim is verifiable
-              before capital moves.
+              To facilitate private capital transactions with confidence, integrity, and accountability by applying a consistent standard of verification, documentation, due diligence, and transaction oversight.
             </p>
           </div>
           <div>
             <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-3">Our Vision</div>
             <p className="text-[17px] text-navy leading-[1.7] font-medium">
-              To become the institutional trust layer for private capital markets, making
-              independently verifiable transactions the global standard for the movement
-              of private capital.
+              To become the authorized intermediary private capital market participants rely on when transaction integrity, accountability, and verifiable execution matter most.
             </p>
           </div>
           <div className="border-t border-[#E2E8F0] pt-10 text-center">
