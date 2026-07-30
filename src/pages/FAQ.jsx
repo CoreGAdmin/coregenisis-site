@@ -15,7 +15,7 @@ function FaqParagraph({ para }) {
   return (
     <p className="text-[15px] text-slate leading-[1.75] mb-3 last:mb-0">
       {para.before}
-      <Link to="/who-we-serve" className="text-navy underline font-medium">{para.linkText}</Link>
+      <Link to="/who-we-are" className="text-navy underline font-medium">{para.linkText}</Link>
       {para.after}
     </p>
   );

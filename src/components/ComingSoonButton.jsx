@@ -10,7 +10,8 @@ import { useState, useRef, useCallback } from "react";
 // Usage: <ComingSoonButton as="a" className="...">Request Access</ComingSoonButton>
 // Renders the given tag (default "a") with all other props passed through,
 // intercepting onClick to show the toast instead of navigating.
-export function ComingSoonButton({ as: Tag = "a", children, className = "", ...rest }) {
+export function ComingSoonButton({ as = "a", children, className = "", ...rest }) {
+  const Tag = as;
   const [toast, setToast] = useState(false);
   const timerRef = useRef(null);
 

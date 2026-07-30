@@ -1,7 +1,8 @@
 import PageNav from "../components/PageNav.jsx";
 import PageFooter from "../components/PageFooter.jsx";
 import PipelineBar from "../components/PipelineBar.jsx";
-import { ComingSoonButton } from "../components/ComingSoonButton.jsx";
+import { Link } from "react-router-dom";
+import PlatformNotice from "../components/PlatformNotice.jsx";
 import { PLATFORM_SECTIONS } from "../data/platformContent.js";
 
 export default function Platform() {
@@ -23,6 +24,10 @@ export default function Platform() {
 
       <section className="bg-navy px-8 pb-16 border-b border-navyLine">
         <div className="max-w-[880px] mx-auto"><PipelineBar /></div>
+      </section>
+
+      <section className="bg-white px-8 py-12">
+        <div className="max-w-[760px] mx-auto"><PlatformNotice /></div>
       </section>
 
       {PLATFORM_SECTIONS.map((section, i) => (
@@ -52,7 +57,7 @@ export default function Platform() {
           <p className="text-[15px] text-ice/80 mb-8">
             Access is by request. Tell us what you are moving, your role in the transaction, and the relevant counterparties. CoreG will confirm fit before the process begins.
           </p>
-          <ComingSoonButton className="inline-block bg-gold text-navy text-[15px] font-semibold px-8 py-3.5 rounded cursor-pointer">Request Access</ComingSoonButton>
+          <Link to="/contact" className="inline-block bg-gold text-navy text-[15px] font-semibold px-8 py-3.5 rounded">Contact CoreG</Link>
         </div>
       </section>
 
