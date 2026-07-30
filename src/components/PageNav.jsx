@@ -8,7 +8,8 @@ const NAV = [
   { label: "Governance", path: "/governance" },
   { label: "Who We Serve", path: "/who-we-serve" },
   { label: "Partners", path: "/partners" },
-  { label: "The Firm", path: "/company" },
+  { label: "Our Firm", path: "/company" },
+  { label: "Leadership", path: "/leadership" },
   { label: "FAQ", path: "/faq" },
 ];
 

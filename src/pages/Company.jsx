@@ -8,10 +8,10 @@ export default function Company() {
     <div className="font-sans text-navy bg-white">
       <PageNav />
 
-      {/* HERO — mission/thesis. Leadership section below names the CEO. */}
+      {/* HERO — mission/thesis. Leadership now lives on its own page. */}
       <section className="bg-navy px-8 pt-20 pb-16 text-center">
         <div className="max-w-[760px] mx-auto">
-          <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">The Firm</div>
+          <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">Our Firm</div>
           <h1 className="font-display text-[clamp(32px,4.5vw,50px)] font-medium leading-[1.15] text-white mb-6">
             Private capital markets, held to the standard they should have had from the start.
           </h1>
@@ -22,7 +22,7 @@ export default function Company() {
         </div>
       </section>
 
-      {/* MISSION — unchanged. */}
+      {/* MISSION (narrative) — unchanged from original build. */}
       <section className="bg-white px-8 py-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[16px] text-slate leading-[1.8] mb-6">
@@ -48,53 +48,41 @@ export default function Company() {
         </div>
       </section>
 
-      {/* LEADERSHIP — final bio, provided verbatim, 4 paragraphs. */}
+      {/* MISSION / VISION / PURPOSE — new, finalized content. Kept as short,
+          clearly-labeled statements, matching the confirmed institutional
+          convention (Smith Capital Investors: short, separately-labeled
+          Mission/Vision, distinct from any individual bio). */}
       <section className="bg-mist px-8 py-20 border-t border-[#E2E8F0]">
-        <div className="max-w-[720px] mx-auto">
-          <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-8">Leadership</div>
-          <div className="bg-white border border-[#E2E8F0] rounded-lg p-8">
-            <div className="mb-1 text-xs font-mono text-gold uppercase tracking-wide">Chief Executive Officer</div>
-            <h2 className="font-display text-2xl font-medium text-navy mb-4">Todd Morgan</h2>
-            <p className="text-[15px] text-slate leading-[1.75] mb-4">
-              Todd Morgan brings more than 30 years of executive leadership experience
-              across highly regulated, multi-stakeholder operating environments where
-              operational precision, institutional accountability, and disciplined
-              execution were fundamental to mission success. Throughout his career, he has
-              led complex organizations, directed mission-critical programs exceeding $100
-              million, and built governance frameworks designed to operate reliably in
-              environments where failure was not an acceptable outcome.
+        <div className="max-w-[820px] mx-auto space-y-12">
+          <div>
+            <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-3">Our Mission</div>
+            <p className="text-[17px] text-navy leading-[1.7] font-medium">
+              To establish trust as an operational standard in private capital markets by
+              independently governing identity, verification, due diligence, compliance,
+              and transaction execution — ensuring every material claim is verifiable
+              before capital moves.
             </p>
-            <p className="text-[15px] text-slate leading-[1.75] mb-4">
-              He is the architect of the Trust Infrastructure discipline and the
-              Autonomous Execution Governance (AEG) doctrine, establishing the governance
-              principles and institutional trust model that enable autonomous execution at
-              enterprise scale.
+          </div>
+          <div>
+            <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-3">Our Vision</div>
+            <p className="text-[17px] text-navy leading-[1.7] font-medium">
+              To become the institutional trust layer for private capital markets, making
+              independently verifiable transactions the global standard for the movement
+              of private capital.
             </p>
-            <p className="text-[15px] text-slate leading-[1.75] mb-4">
-              As Chief Executive Officer and Chairman of the Board of CoreG, Mr. Morgan
-              leads the Firm's strategic direction, growth, and day-to-day operations while
-              overseeing the development of its executive leadership team and Board of
-              Directors. His focus is building the institutional infrastructure required to
-              bring verifiable governance, operational integrity, and accountability to the
-              next generation of AI-enabled private capital markets.
-            </p>
-            <p className="text-[15px] text-slate leading-[1.75]">
-              Under his leadership, CoreG operates on a single governing principle:
-              verification only matters when it holds under pressure. When critical
-              standards can be bypassed, they become liabilities waiting to surface. Every material
-              action progresses through defined governance controls that produce
-              contemporaneous, auditable evidence before advancing. That operating
-              discipline establishes the trust, transparency, and institutional confidence
-              upon which the Firm is built.
+          </div>
+          <div className="border-t border-[#E2E8F0] pt-10 text-center">
+            <p className="font-display text-[22px] sm:text-[26px] font-medium text-navy leading-snug">
+              Capital should never move faster than truth.
             </p>
           </div>
         </div>
       </section>
 
       {/* CLOSING CTA */}
-      <section className="bg-mist px-8 py-16 text-center border-t border-[#E2E8F0]">
+      <section className="bg-white px-8 py-16 text-center border-t border-[#E2E8F0]">
         <div className="max-w-[600px] mx-auto">
-          <div className="inline-flex items-center gap-3 bg-white border border-[#E2E8F0] rounded-full pl-3 pr-5 py-2.5 mb-8">
+          <div className="inline-flex items-center gap-3 bg-mist border border-[#E2E8F0] rounded-full pl-3 pr-5 py-2.5 mb-8">
             <img src={coreIdentityIcon} alt="CoreIdentity" className="h-7 w-auto" />
             <span className="text-[13px] text-slate">Governed by</span>
             <span className="text-[13px] text-navy font-semibold">CoreIdentity</span>
