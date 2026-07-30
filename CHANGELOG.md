@@ -44,3 +44,10 @@
 - Introduced role-based participant categories.
 - Expanded digital-asset content to include crypto forensics and supported API connectivity.
 - Updated Company and FAQ content to distinguish CoreG from CoreIdentity Technologies.
+
+## [3.0.1] - 2026-07-30
+### Fixed
+- Corrected navigation overflow at tablet and Android desktop-mode viewport widths.
+- Delayed full desktop navigation until the `xl` breakpoint.
+- Removed the forced hero heading line break and enabled balanced natural wrapping.
+- Added targeted root-width and overflow constraints without scaling down page content.

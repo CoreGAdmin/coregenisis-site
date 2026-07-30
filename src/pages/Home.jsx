@@ -37,8 +37,8 @@ export default function Home() {
           <span className="inline-block font-mono text-xs tracking-[0.12em] text-gold uppercase border border-gold rounded-full px-4 py-1.5 mb-7">
             Authorized Private Capital Markets Intermediary
           </span>
-          <h1 className="font-display text-[clamp(36px,5.5vw,64px)] font-medium leading-[1.08] text-white mb-6">
-            CoreG is an authorized intermediary<br />serving private capital markets.
+          <h1 className="font-display text-[clamp(34px,5.5vw,64px)] font-medium leading-[1.08] text-white mb-6 text-balance">
+            CoreG is an authorized intermediary serving private capital markets.
           </h1>
           <p className="text-lg text-ice/85 max-w-[660px] mx-auto leading-relaxed">
             CoreG facilitates qualifying private capital transactions through a disciplined operating standard built to ensure confidence, integrity, and accountability from first engagement through close.

@@ -25,14 +25,14 @@ export default function PageNav() {
         <Link to="/" className="flex-shrink-0" aria-label="CoreG home">
           <img src={logoDark} alt="CoreG" className="h-11 sm:h-14" />
         </Link>
-        <div className="hidden md:flex items-center gap-7">
+        <div className="hidden xl:flex items-center gap-4 2xl:gap-7">
           {NAV.map((item) => (
             <Link key={item.label} to={item.path} className="text-sm font-medium text-white/90 hover:text-white whitespace-nowrap">{item.label}</Link>
           ))}
           <ComingSoonButton className="text-[13px] text-slateLt hover:text-ice whitespace-nowrap cursor-pointer">Client Login</ComingSoonButton>
           <ComingSoonButton className="bg-gold text-navy text-[13px] font-semibold px-4 py-2 rounded whitespace-nowrap cursor-pointer">Request Access</ComingSoonButton>
         </div>
-        <div className="flex md:hidden items-center gap-3">
+        <div className="flex xl:hidden items-center gap-3">
           <ComingSoonButton className="bg-gold text-navy text-sm font-semibold px-4 py-2 rounded whitespace-nowrap cursor-pointer">Request Access</ComingSoonButton>
           <button onClick={() => setMenuOpen((v) => !v)} aria-label="Toggle menu" aria-expanded={menuOpen} className="text-white p-1 -mr-1">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -46,7 +46,7 @@ export default function PageNav() {
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden flex flex-col px-4 pb-4 gap-1 border-t border-navyLine">
+        <div className="xl:hidden flex flex-col px-4 pb-4 gap-1 border-t border-navyLine">
           {NAV.map((item) => (
             <Link key={item.label} to={item.path} className="py-2.5 text-[15px] font-medium text-white/90 hover:text-white">{item.label}</Link>
           ))}

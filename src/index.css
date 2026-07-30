@@ -130,3 +130,45 @@ header nav > div {
   }
 }
 
+/* CoreG v3.0.1 responsive navigation and heading correction */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+section,
+header,
+nav,
+footer {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (max-width: 1279px) {
+  nav img[alt="CoreG"] {
+    width: auto;
+    max-width: 150px;
+    height: 44px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 639px) {
+  .text-balance {
+    text-wrap: pretty;
+  }
+}
+
