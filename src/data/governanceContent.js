@@ -1,40 +1,41 @@
-// Governance page content — structured around the ELEVEN AGENTS and THREE
-// MECHANISMS, deliberately NOT the Platform page's four-pipeline-stage
-// pattern. This is CoreG's actual differentiator; it earns its own shape.
-export const AGENT_CATEGORIES = [
+export const GOVERNANCE_FUNCTIONS = [
   {
     label: "Identity & Screening",
     count: 4,
-    detail: "Verify who's involved before anything else runs — identity checks, sanctions screening, and ongoing monitoring for changes in status.",
+    detail: "Establish who is participating, confirm relevant authority, screen applicable parties, and continue monitoring for material changes in status.",
   },
   {
     label: "Document & Asset Verification",
     count: 3,
-    detail: "Check submitted records and registered assets against the required standard — not accepted at face value, checked against source.",
+    detail: "Evaluate submitted records and registered assets against the requirements applicable to the transaction, asset class, and jurisdiction.",
   },
   {
-    label: "Pipeline Enforcement",
+    label: "Transaction Gate Enforcement",
     count: 2,
-    detail: "Hold the gate at every stage transition. A transaction does not advance on a partial pass or a manual override.",
+    detail: "Apply defined requirements at each stage so a transaction advances only after the conditions governing that stage have been satisfied.",
   },
   {
-    label: "Proof & Reporting",
+    label: "Evidence & Reporting",
     count: 2,
-    detail: "Generate the cryptographic proof pack and structure every decision as a reporting-ready record from the moment it's made.",
+    detail: "Create contemporaneous evidence of material decisions, approvals, holds, and escalations so the transaction record remains auditable from first engagement through close.",
   },
 ];
 
-export const MECHANISMS = [
+export const GOVERNANCE_STANDARDS = [
   {
-    label: "OFAC / Sanctions Screening",
-    detail: "Every party in a transaction — not just the primary client — is screened against sanctions lists before any stage involving them can advance. Screening runs continuously, not once at onboarding; a status change after intake re-triggers the gate.",
+    label: "Participant and Sanctions Screening",
+    detail: "Relevant parties and institutions are screened before a transaction advances to a stage involving them. Screening may continue throughout the transaction lifecycle so a material status change can be identified and addressed.",
   },
   {
-    label: "Document Verification",
-    detail: "Submitted documentation is checked against the specific standard required for that asset class and jurisdiction — not a generic checklist. A document that doesn't meet the standard blocks advancement; it doesn't get a note for manual follow-up.",
+    label: "Document and Asset Validation",
+    detail: "Documentation is evaluated against the standard required for the relevant participant, asset, transaction structure, and jurisdiction. Insufficient evidence prevents the affected requirement from being treated as satisfied.",
   },
   {
-    label: "Cryptographic Proof Pack",
-    detail: "Every decision — a pass, a gate held, an escalation — produces a signed, auditable record at the moment it happens. The proof pack isn't generated for an audit; it exists whether or not anyone ever asks to see it.",
+    label: "Stage-Gated Advancement",
+    detail: "Each stage has defined conditions for advancement. A transaction does not move forward merely because commercial pressure, timing, or participant preference favors acceleration.",
+  },
+  {
+    label: "Auditable Transaction Evidence",
+    detail: "Material actions and decisions are recorded as they occur, preserving a transaction history that can support internal review, counterparty confidence, compliance analysis, and post-close reporting.",
   },
 ];

@@ -13,11 +13,10 @@ export default function Platform() {
         <div className="max-w-[880px] mx-auto text-center">
           <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">The Platform</div>
           <h1 className="font-display text-[clamp(32px,4.5vw,52px)] font-medium leading-[1.12] text-white mb-6">
-            One governed pipeline.<br/>Four points of enforcement.
+            One transaction process.<br/>Governed from intake through close.
           </h1>
           <p className="text-lg text-ice/85 max-w-[640px] mx-auto leading-relaxed">
-            CoreG isn't four products bundled together — it's a single transaction pipeline
-            with hard gates at every stage. Here's what happens at each one.
+            CoreG facilitates qualifying transactions through a structured, stage-gated process. Each stage addresses a distinct transaction requirement while preserving one continuous, auditable record.
           </p>
         </div>
       </section>
@@ -49,9 +48,9 @@ export default function Platform() {
 
       <section className="bg-navy px-8 py-20 text-center">
         <div className="max-w-[640px] mx-auto">
-          <h2 className="font-display text-[28px] font-medium text-white mb-4">See the pipeline in practice.</h2>
+          <h2 className="font-display text-[28px] font-medium text-white mb-4">Discuss a qualifying transaction.</h2>
           <p className="text-[15px] text-ice/80 mb-8">
-            Access is by request. Tell us what you're moving and we'll confirm fit before anything else.
+            Access is by request. Tell us what you are moving, your role in the transaction, and the relevant counterparties. CoreG will confirm fit before the process begins.
           </p>
           <ComingSoonButton className="inline-block bg-gold text-navy text-[15px] font-semibold px-8 py-3.5 rounded cursor-pointer">Request Access</ComingSoonButton>
         </div>
