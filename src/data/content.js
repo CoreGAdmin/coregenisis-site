@@ -19,7 +19,7 @@ export const CAPABILITIES = [
 
 export const SERVES = [
   { label: "Banks",
-    body: "Institutions moving high-value instruments — including digital asset custody — that need a governed, auditable transaction record from first contact to close." },
+    body: "Institutions moving high-value instruments that need a governed, auditable transaction record from first contact to close." },
   { label: "Asset Holders",
     body: "Principals and their representatives who need proof-of-funds and asset verification handled to institutional standard." },
   { label: "PCM Participants",
@@ -28,9 +28,9 @@ export const SERVES = [
 
 export const INSTITUTIONAL_CLIENTS = [
   { label: "Family Offices",
-    body: "Principals managing multi-generational wealth who need asset verification and transaction governance handled to the same standard as an institution, without an institution's overhead, whether the assets are traditional or digital." },
+    body: "Principals managing multi-generational wealth who need asset verification and transaction governance handled to the same standard as an institution, without an institution's overhead." },
   { label: "Private Equity",
     body: "Firms moving instruments and collateral through deal structures that need an auditable record from first contact through close, not reconstructed after the fact." },
   { label: "Hedge Funds",
-    body: "Funds requiring rapid, governed verification on high-value positions, including crypto strategies — speed without skipping a gate." },
+    body: "Funds requiring rapid, governed verification on high-value positions — speed without skipping a gate." },
 ];

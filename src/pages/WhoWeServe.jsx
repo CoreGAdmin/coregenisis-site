@@ -32,24 +32,57 @@ export default function WhoWeServe() {
       </section>
 
       {/* INSTITUTIONAL CLIENTS — distinct block, not a flat card, since it
-          contains three sub-types with their own descriptors rather than
-          one entry with one line, unlike the three cards above. */}
+          contains sub-types with their own descriptors rather than one
+          entry with one line, unlike the three cards above. */}
       <section className="bg-mist px-8 py-20 border-t border-[#E2E8F0]">
         <div className="max-w-[1080px] mx-auto">
           <div className="border-t-2 border-gold pt-6 mb-10">
             <h2 className="font-display text-2xl font-medium text-navy mb-3">Institutional Clients</h2>
             <p className="text-[15px] text-slate leading-relaxed max-w-[640px]">
-              Family Offices, Private Equity, and Hedge Funds — institutional participants
-              who move through the same governed pipeline as every other client type on CoreG.
+              Family Offices, Private Equity, Hedge Funds, and Cryptocurrency — institutional
+              participants who move through the same governed pipeline as every other client
+              type on CoreG.
             </p>
           </div>
-          <div className="grid gap-8 [grid-template-columns:repeat(auto-fit,minmax(240px,1fr))]">
+          <div className="grid gap-8 [grid-template-columns:repeat(auto-fit,minmax(240px,1fr))] mb-8">
             {INSTITUTIONAL_CLIENTS.map((c) => (
               <div key={c.label} className="bg-white border border-[#E2E8F0] rounded-lg p-6">
                 <h3 className="text-base font-semibold text-navy mb-2">{c.label}</h3>
                 <p className="text-[14px] text-slate leading-relaxed">{c.body}</p>
               </div>
             ))}
+          </div>
+
+          {/* Cryptocurrency — standalone WIDE card, per direct confirmation.
+              Card is the summary; the FAQ page has the deeper explanation
+              (both kept intentionally, not duplicated verbatim). */}
+          <div className="bg-white border border-[#E2E8F0] rounded-lg p-8">
+            <div className="flex flex-wrap items-baseline gap-3 mb-4">
+              <h3 className="text-lg font-semibold text-navy">Cryptocurrency</h3>
+              <span className="font-mono text-[11px] text-gold uppercase tracking-wide border border-gold/40 rounded-full px-2.5 py-0.5">
+                Custodial &amp; Non-Custodial
+              </span>
+            </div>
+            <p className="text-[14px] text-slate leading-relaxed mb-3">
+              CoreG serves both custodial managers, who hold client assets directly under a
+              regulated custody model, and non-custodial managers, who direct assets while
+              clients retain control of their own keys. Both move through the same governed
+              pipeline as every other institutional client — verification doesn't relax
+              because the asset is digital.
+            </p>
+            <p className="text-[14px] text-slate leading-relaxed mb-3">
+              Institutional participation in digital assets has moved from early adoption to
+              core infrastructure — custody, compliance, and verification are now evaluated
+              by the same standards as any other regulated financial asset, not treated as a
+              separate, lower-scrutiny category. That shift is what makes governed
+              verification necessary here, not optional.
+            </p>
+            <p className="text-[14px] text-slate leading-relaxed">
+              CoreG's verification layer extends to crypto forensics — tracing asset
+              provenance, flagging wallet-level risk indicators, and applying the same
+              screening discipline used across every other asset class to intermediaries
+              operating in digital markets. See the FAQ for how this works in more depth.
+            </p>
           </div>
         </div>
       </section>
