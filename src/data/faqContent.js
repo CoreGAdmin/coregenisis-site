@@ -44,4 +44,12 @@ export const FAQ_ITEMS = [
       "Every participant type moves through the same governed pipeline once a transaction is in motion — there's no separate, lighter-touch path for any category.",
     ],
   },
+  {
+    q: "How does CoreG handle cryptocurrency and digital assets?",
+    a: [
+      "CoreG serves both custodial and non-custodial managers — those who hold client digital assets directly under a regulated custody model, and those who direct assets while clients retain control of their own keys. Both move through the same governed pipeline as every other institutional client; verification does not relax because the asset is digital.",
+      "Institutional participation in digital assets has moved from early adoption to core infrastructure — custody, compliance, and verification are increasingly evaluated by the same standards as any other regulated financial asset, not treated as a separate, lower-scrutiny category.",
+      "CoreG's verification layer extends to crypto forensics — tracing asset provenance and flagging wallet-level risk indicators as part of the same governed screening applied to every other asset class.",
+    ],
+  },
 ];

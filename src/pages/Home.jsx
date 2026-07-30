@@ -53,11 +53,10 @@ export default function Home() {
             runs through the same verification gates before a transaction can advance.
           </p>
           <p className="text-[15px] text-slate leading-[1.75]">
-            We call this Truth in Transactions. It is not a slogan or a marketing
-            campaign. It is an operating requirement. Every identity. Every credential.
-            Every authority. Every document. Every claim. Independently verified before a
-            transaction can advance. If a claim cannot be verified, it does not move
-            forward — regardless of who makes it or how much is at stake.
+            Our operating requirement is Truth in Transactions. Every identity. Every
+            credential. Every authority. Every document. Every claim. Independently
+            verified before a transaction can advance. If a claim cannot be verified, it
+            does not move forward — regardless of who makes it or how much is at stake.
           </p>
         </div>
       </section>
