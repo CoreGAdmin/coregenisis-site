@@ -26,6 +26,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHY WE EXIST — elevated positioning: CoreG as the independent
+          trust layer between institutional counterparties, not just
+          governance software. Institutional register throughout, no
+          accusatory language, doctrine-style close. */}
+      <section className="bg-white px-8 py-20">
+        <div className="max-w-[820px] mx-auto">
+          <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-3">The Independent Trust Layer</div>
+          <h2 className="font-display text-[28px] sm:text-[32px] font-medium text-navy mb-6 leading-tight">
+            Private capital markets don't have a truth problem because verification is difficult.
+          </h2>
+          <p className="text-[15px] text-slate leading-[1.75] mb-4">
+            They have one because verification is too often performed by parties whose
+            incentives are tied to closing the transaction. CoreG exists to be the
+            intermediary every transaction actually needs — performing due diligence,
+            running compliance, and standing behind referrals on behalf of the buyer, the
+            seller, and the principals, not just whichever side is paying.
+          </p>
+          <p className="text-[15px] text-slate leading-[1.75] mb-4">
+            Historically, unauthorized intermediaries have been able to insert themselves
+            into transactions by fabricating authority, inflating credentials, or
+            misrepresenting relationships. Once introduced into the transaction chain,
+            those claims often go independently unverified until significant time, cost,
+            or capital has already been committed. CoreG's governed pipeline exists
+            specifically to close that gap: every party, every credential, every claim
+            runs through the same verification gates before a transaction can advance.
+          </p>
+          <p className="text-[15px] text-slate leading-[1.75]">
+            We call this Truth in Transactions. It is not a slogan or a marketing
+            campaign. It is an operating requirement. Every identity. Every credential.
+            Every authority. Every document. Every claim. Independently verified before a
+            transaction can advance. If a claim cannot be verified, it does not move
+            forward — regardless of who makes it or how much is at stake.
+          </p>
+        </div>
+      </section>
+
       <section className="bg-mist px-8 py-[88px]">
         <div className="max-w-[1080px] mx-auto">
           <div className="max-w-[560px] mb-14">
