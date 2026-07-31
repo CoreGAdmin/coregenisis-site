@@ -1,3 +1,9 @@
+## v4.2.0 — Leadership Profile Finalization
+
+- Replaced the oversized black-background portrait treatment with a proportional circular executive portrait.
+- Implemented the approved Leadership identity card and responsive mobile sizing.
+- Updated the executive biography and institutional focus areas.
+
 # CoreG v4.1.0
 
 - Added the original executive portrait and completed the Leadership biography presentation.

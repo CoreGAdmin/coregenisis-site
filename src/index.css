@@ -172,3 +172,269 @@ h3 {
   }
 }
 
+
+/* CoreG v4.2.0 leadership profile start */
+.leadership-page {
+  background:
+    radial-gradient(circle at 18% 10%, rgba(198, 154, 36, 0.045), transparent 30rem),
+    #ffffff;
+  padding: clamp(2rem, 5vw, 4.5rem) clamp(1rem, 4vw, 2.5rem) clamp(4rem, 7vw, 6rem);
+}
+
+.leadership-shell {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+
+.leadership-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: clamp(1.75rem, 4vw, 3rem);
+  color: #536176;
+  font-size: 0.95rem;
+}
+
+.leadership-breadcrumb a {
+  color: #334155;
+  text-decoration: none;
+}
+
+.leadership-breadcrumb a:hover {
+  color: #9c7614;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.leadership-identity-card {
+  display: grid;
+  grid-template-columns: minmax(190px, 260px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5.25rem);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 18px 50px rgba(8, 25, 48, 0.055);
+}
+
+.leadership-portrait-wrap {
+  width: min(100%, 250px);
+  aspect-ratio: 1;
+  justify-self: center;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.leadership-portrait {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.leadership-summary {
+  min-width: 0;
+}
+
+.leadership-eyebrow,
+.leadership-section-label {
+  margin: 0;
+  color: #b18418;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.leadership-summary h1 {
+  margin: 0.6rem 0 0;
+  color: #081930;
+  font-family: "Fraunces", serif;
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.leadership-rule {
+  width: 4rem;
+  height: 2px;
+  margin: 1.75rem 0;
+  background: #c69a24;
+}
+
+.leadership-intro {
+  max-width: 620px;
+  margin: 0;
+  color: #28374b;
+  font-size: clamp(1rem, 1.8vw, 1.18rem);
+  line-height: 1.85;
+}
+
+.leadership-biography,
+.leadership-focus {
+  padding: clamp(3.5rem, 7vw, 5.5rem) clamp(0.25rem, 3vw, 2rem) 0;
+}
+
+.leadership-biography p:not(.leadership-section-label) {
+  max-width: 920px;
+  margin: 1.75rem 0 0;
+  color: #465467;
+  font-size: clamp(1rem, 1.7vw, 1.13rem);
+  line-height: 1.9;
+}
+
+.leadership-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 1.75rem;
+  border-top: 1px solid #e4e7eb;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+.leadership-focus-item {
+  min-width: 0;
+  padding: 1.5rem 1.35rem;
+}
+
+.leadership-focus-item + .leadership-focus-item {
+  border-left: 1px solid #e4e7eb;
+}
+
+.leadership-focus-item h2 {
+  margin: 0;
+  color: #14243b;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.leadership-focus-item p {
+  margin: 0.55rem 0 0;
+  color: #657184;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.leadership-quote {
+  margin: clamp(3.5rem, 7vw, 5rem) clamp(0.25rem, 3vw, 2rem) 0;
+  padding: clamp(1.75rem, 4vw, 2.5rem);
+  border: 1px solid #e6e1d7;
+  border-left: 4px solid #c69a24;
+  border-radius: 0.4rem;
+  background: #fbfaf7;
+}
+
+.leadership-quote p {
+  max-width: 850px;
+  margin: 0;
+  color: #16253b;
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.2rem, 2.3vw, 1.65rem);
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.leadership-quote footer {
+  margin-top: 1rem;
+  color: #a6780a;
+  font-weight: 600;
+}
+
+@media (max-width: 850px) {
+  .leadership-identity-card {
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .leadership-portrait-wrap {
+    width: 170px;
+  }
+
+  .leadership-focus-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .leadership-focus-item:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid #e4e7eb;
+  }
+
+  .leadership-focus-item:nth-child(4) {
+    border-top: 1px solid #e4e7eb;
+  }
+}
+
+@media (max-width: 640px) {
+  .leadership-page {
+    padding-inline: 1rem;
+  }
+
+  .leadership-identity-card {
+    grid-template-columns: 112px minmax(0, 1fr);
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem 1.15rem;
+  }
+
+  .leadership-portrait-wrap {
+    width: 112px;
+  }
+
+  .leadership-summary h1 {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
+  .leadership-rule {
+    width: 2.75rem;
+    margin: 1rem 0;
+  }
+
+  .leadership-intro {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .leadership-focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-focus-item + .leadership-focus-item {
+    border-left: 0;
+    border-top: 1px solid #e4e7eb;
+  }
+}
+
+@media (max-width: 430px) {
+  .leadership-identity-card {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .leadership-portrait-wrap {
+    width: 88px;
+  }
+
+  .leadership-eyebrow {
+    font-size: 0.66rem;
+    letter-spacing: 0.09em;
+  }
+
+  .leadership-summary h1 {
+    font-size: clamp(1.75rem, 8.6vw, 2.25rem);
+  }
+
+  .leadership-intro {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+}
+/* CoreG v4.2.0 leadership profile end */
+

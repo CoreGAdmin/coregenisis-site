@@ -1,56 +1,140 @@
 import { Link } from "react-router-dom";
 import PageNav from "../components/PageNav.jsx";
 import PageFooter from "../components/PageFooter.jsx";
-import RelatedPages from "../components/RelatedPages.jsx";
-import executivePortrait from "../assets/todd-morgan-executive.jpg";
+import { ComingSoonButton } from "../components/ComingSoonButton.jsx";
+import executivePortrait from "../assets/todd-morgan-leadership.jpg";
+
+const focusAreas = [
+  {
+    title: "Institutional Governance",
+    description: "Governance structures designed to hold under institutional scrutiny.",
+  },
+  {
+    title: "Operational Integrity",
+    description: "Disciplined execution supported by accountable operating controls.",
+  },
+  {
+    title: "Risk & Compliance Infrastructure",
+    description: "Verifiable standards embedded directly into transaction operations.",
+  },
+  {
+    title: "Strategic Growth & Partnerships",
+    description: "Institutional growth aligned with durable market confidence.",
+  },
+];
 
 export default function Leadership() {
   return (
     <div className="font-sans text-navy bg-white">
       <PageNav />
+
       <main>
-        <section className="bg-navy px-5 sm:px-8 pt-20 pb-16 text-center">
-          <div className="max-w-[800px] mx-auto">
-            <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">Leadership</div>
-            <h1 className="font-display text-[clamp(34px,5vw,56px)] font-medium leading-[1.1] text-white mb-6 text-balance">The leadership accountable for holding the standard.</h1>
-            <p className="text-lg text-ice/85 max-w-[650px] mx-auto leading-relaxed">Institutional governance is only as credible as the leadership responsible for enforcing it.</p>
-          </div>
-        </section>
+        <section className="leadership-page">
+          <div className="leadership-shell">
+            <nav className="leadership-breadcrumb" aria-label="Breadcrumb">
+              <Link to="/">Home</Link>
+              <span aria-hidden="true">/</span>
+              <span>Leadership</span>
+              <span aria-hidden="true">/</span>
+              <span aria-current="page">Todd Morgan</span>
+            </nav>
 
-        <section className="bg-white px-5 sm:px-8 py-20">
-          <div className="max-w-[1080px] mx-auto grid gap-12 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16 items-start">
-            <div className="lg:sticky lg:top-28">
-              <div className="overflow-hidden bg-navy border border-[#DCE3EC] rounded-sm">
-                <img src={executivePortrait} alt="Todd Morgan, Chief Executive Officer of CoreG" className="w-full aspect-square object-cover object-top" />
+            <article className="leadership-identity-card">
+              <div className="leadership-portrait-wrap">
+                <img
+                  className="leadership-portrait"
+                  src={executivePortrait}
+                  alt="Todd Morgan, Chief Executive Officer of CoreG"
+                  width="1536"
+                  height="1536"
+                />
               </div>
-              <div className="border-x border-b border-[#DCE3EC] px-6 py-5">
-                <div className="font-mono text-[10px] tracking-[0.12em] text-gold uppercase mb-2">Chief Executive Officer</div>
-                <h2 className="font-display text-[30px] font-medium text-navy">Todd Morgan</h2>
-              </div>
-            </div>
 
-            <article>
-              <div className="font-mono text-[11px] tracking-[0.12em] text-gold uppercase mb-4">Executive Biography</div>
-              <div className="space-y-6 text-[16px] text-slate leading-[1.85]">
-                <p>Todd Morgan brings more than 30 years of executive leadership experience across highly regulated, multi-stakeholder operating environments where operational precision, institutional accountability, and disciplined execution were fundamental to mission success. Throughout his career, he has led complex organizations, directed mission-critical programs exceeding $100 million, and built governance frameworks designed to operate reliably in environments where failure was not an acceptable outcome.</p>
-                <p>He is the architect of the Trust Infrastructure discipline and the Autonomous Execution Governance doctrine, establishing the governance principles and institutional trust model that enable autonomous execution at enterprise scale.</p>
-                <p>As Chief Executive Officer of CoreG, Mr. Morgan guides the Firm's capital markets and governance strategy, growth, and operations while overseeing the development of its executive leadership team and Board of Directors. His focus is building the institutional infrastructure required to bring verifiable governance, operational integrity, and accountability to the next generation of AI-enabled private capital markets.</p>
-                <p>Under his leadership, CoreG operates on a single governing principle: verification only matters when it holds under pressure. Every material action progresses through defined governance controls that produce contemporaneous, auditable evidence before advancing. That operating discipline establishes the trust, transparency, and institutional confidence upon which the Firm is built.</p>
-              </div>
-              <div className="mt-9 pt-8 border-t border-[#DCE3EC]">
-                <Link to="/contact" className="inline-flex bg-navy text-white text-[15px] font-semibold px-7 py-3.5 rounded-sm">Contact CoreG</Link>
+              <div className="leadership-summary">
+                <p className="leadership-eyebrow">Chief Executive Officer</p>
+                <h1>Todd Morgan</h1>
+                <div className="leadership-rule" aria-hidden="true" />
+                <p className="leadership-intro">
+                  Todd Morgan leads CoreG&apos;s strategy, growth, and operational
+                  execution as the Firm builds the institutional infrastructure layer
+                  for the next generation of private capital markets.
+                </p>
               </div>
             </article>
+
+            <section className="leadership-biography" aria-labelledby="executive-biography">
+              <p className="leadership-section-label" id="executive-biography">
+                Executive Biography
+              </p>
+
+              <p>
+                Todd Morgan brings more than 30 years of executive leadership
+                experience across highly regulated, multi-stakeholder operating
+                environments where operational precision, institutional
+                accountability, and disciplined execution were fundamental to
+                mission success.
+              </p>
+
+              <p>
+                His background spans federal contracting, National Intelligence and
+                defense programs, and multi-entity business operations. In these
+                roles, he has led complex organizations through environments that
+                demanded rigorous governance, verifiable standards, and the ability
+                to deliver under the highest levels of scrutiny.
+              </p>
+
+              <p>
+                At CoreG, Mr. Morgan guides the Firm&apos;s capital markets and
+                governance strategy while leading its growth and operational
+                execution. His focus is creating a private capital markets ecosystem
+                where trust is built into the infrastructure—providing verifiable
+                outcomes, operational integrity, and a governance standard that
+                institutions can rely on.
+              </p>
+            </section>
+
+            <section className="leadership-focus" aria-labelledby="areas-of-focus">
+              <p className="leadership-section-label" id="areas-of-focus">
+                Areas of Focus
+              </p>
+              <div className="leadership-focus-grid">
+                {focusAreas.map((area) => (
+                  <article className="leadership-focus-item" key={area.title}>
+                    <h2>{area.title}</h2>
+                    <p>{area.description}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <blockquote className="leadership-quote">
+              <p>
+                Verification that can be bypassed under pressure is not
+                verification—it is an unresolved liability.
+              </p>
+              <footer>— Todd Morgan</footer>
+            </blockquote>
           </div>
         </section>
 
-        <RelatedPages title="Continue through the CoreG institution." pages={[
-          { title: "Who We Are", body: "Understand CoreG's role and institutional responsibility.", path: "/who-we-are", action: "Discover CoreG" },
-          { title: "How We Work", body: "Follow the governed eight-stage transaction process.", path: "/how-we-work", action: "Explore the process" },
-          { title: "About", body: "Read CoreG's mission, vision, and institutional architecture.", path: "/about", action: "About CoreG" },
-        ]} />
+        <section className="bg-mist px-8 py-16 text-center border-t border-[#E2E8F0]">
+          <div className="max-w-[600px] mx-auto">
+            <h2 className="font-display text-2xl font-medium text-navy mb-4">
+              Questions about how we operate?
+            </h2>
+            <p className="text-[15px] text-slate mb-8">
+              Access is by request. We&apos;re glad to walk through how the
+              pipeline actually works.
+            </p>
+            <ComingSoonButton className="inline-block bg-navy text-white text-[15px] font-semibold px-8 py-3.5 rounded cursor-pointer">
+              Request Access
+            </ComingSoonButton>
+          </div>
+        </section>
       </main>
+
       <PageFooter />
     </div>
   );
 }
+
