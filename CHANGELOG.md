@@ -1,3 +1,7 @@
+## v4.3.0 — Leadership and Institutional Access
+
+- Finalized Leadership and added dedicated Request Access routing.
+
 ## v4.2.1 — Mobile Leadership Alignment
 
 - Corrected mobile navigation alignment and control sizing.

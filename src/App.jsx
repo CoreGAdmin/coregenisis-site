@@ -7,6 +7,7 @@ import Leadership from "./pages/Leadership.jsx";
 import About from "./pages/About.jsx";
 import Insights from "./pages/Insights.jsx";
 import Contact from "./pages/Contact.jsx";
+import RequestAccess from "./pages/RequestAccess.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 import TermsOfService from "./pages/TermsOfService.jsx";
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/insights" element={<Insights />} />
         <Route path="/insights/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/request-access" element={<RequestAccess />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
 
