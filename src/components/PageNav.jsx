@@ -39,14 +39,14 @@ export default function PageNav() {
           <ComingSoonButton className="text-[13px] text-slateLt hover:text-ice whitespace-nowrap cursor-pointer">
             Client Login
           </ComingSoonButton>
-          <Link to="/contact" className="bg-gold text-navy text-[13px] font-semibold px-4 py-2 rounded whitespace-nowrap">
+          <Link to="/request-access" className="bg-gold text-navy text-[13px] font-semibold px-4 py-2 rounded whitespace-nowrap">
             Request Access
           </Link>
         </div>
 
         <div className="site-nav-actions flex xl:hidden items-center gap-3">
           <Link
-            to="/contact"
+            to="/request-access"
             className="site-nav-request bg-gold text-navy text-sm font-semibold px-4 py-2 rounded whitespace-nowrap"
             onClick={closeMenu}
           >

@@ -1,3 +1,7 @@
+## v4.3.1 — Leadership Polish and Access Routing Fix
+
+- Corrected Request Access routing and refined responsive Leadership presentation.
+
 ## v4.3.0 — Leadership and Institutional Access
 
 - Finalized Leadership and added dedicated Request Access routing.
