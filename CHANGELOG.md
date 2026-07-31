@@ -1,3 +1,7 @@
+## v4.3.3 — Leadership Summary Copy Correction
+
+- Applied the approved complete-sentence Leadership Summary.
+
 ## v4.3.2 — Mobile Leadership Composition Fix
 
 - Rebuilt the mobile executive profile so the portrait sits directly beside the Leadership Summary.

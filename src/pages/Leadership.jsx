@@ -40,7 +40,7 @@ export default function Leadership() {
                 <div className="leadership-summary">
                   <p className="leadership-summary-label">Leadership Summary</p>
                   <p className="leadership-intro">
-                    Leads CoreG&apos;s strategy, institutional growth, and executive operations while guiding the Firm&apos;s capital markets and governance strategy to establish a more trusted, transparent, and institutionally accountable private capital markets ecosystem.
+                    Responsible for leading CoreG&apos;s strategy, institutional growth, and executive operations while guiding the Firm&apos;s capital markets and governance strategy to establish a more trusted, transparent, and institutionally accountable private capital markets ecosystem.
                   </p>
                 </div>
               </div>
