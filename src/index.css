@@ -733,3 +733,151 @@ header a[href="/request-access"],
 }
 
 /* CoreG v4.3.1 polish end */
+
+/* CoreG v4.3.2 mobile profile start */
+
+/*
+  One stable composition:
+  - executive heading spans the card
+  - portrait sits directly left of Leadership Summary
+  - portrait remains circular and top-aligned with summary
+*/
+.leadership-identity-card {
+  display: grid !important;
+  grid-template-columns: minmax(150px, 210px) minmax(0, 1fr) !important;
+  grid-template-areas:
+    "portrait heading"
+    "portrait summary" !important;
+  column-gap: clamp(2rem, 5vw, 4.5rem) !important;
+  row-gap: 1rem !important;
+  align-items: start !important;
+}
+
+.leadership-heading {
+  grid-area: heading;
+  min-width: 0;
+}
+
+.leadership-profile-row {
+  display: contents;
+}
+
+.leadership-portrait-wrap {
+  grid-area: portrait;
+  width: min(100%, 190px) !important;
+  min-width: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  align-self: center !important;
+  overflow: hidden !important;
+  border-radius: 50% !important;
+}
+
+.leadership-portrait {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 50% !important;
+}
+
+.leadership-summary {
+  grid-area: summary;
+  min-width: 0;
+}
+
+.leadership-summary-label {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 760px) {
+  .leadership-identity-card {
+    grid-template-columns: 92px minmax(0, 1fr) !important;
+    grid-template-areas:
+      "heading heading"
+      "portrait summary" !important;
+    column-gap: 1.15rem !important;
+    row-gap: 1.25rem !important;
+    padding: 1.4rem !important;
+    align-items: start !important;
+  }
+
+  .leadership-heading {
+    text-align: left !important;
+  }
+
+  .leadership-heading h1 {
+    font-size: clamp(2.25rem, 10vw, 3rem) !important;
+    line-height: 1.02 !important;
+    margin: .35rem 0 0 !important;
+  }
+
+  .leadership-rule {
+    margin-left: 0 !important;
+    margin-top: 1rem !important;
+  }
+
+  .leadership-portrait-wrap {
+    width: 92px !important;
+    height: 92px !important;
+    align-self: start !important;
+    margin-top: .2rem !important;
+  }
+
+  .leadership-summary {
+    align-self: start !important;
+  }
+
+  .leadership-summary-label {
+    margin: 0 0 .55rem !important;
+  }
+
+  .leadership-intro {
+    margin: 0 !important;
+    font-size: clamp(.96rem, 4.1vw, 1.08rem) !important;
+    line-height: 1.58 !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .leadership-identity-card {
+    grid-template-columns: 82px minmax(0, 1fr) !important;
+    column-gap: .95rem !important;
+    padding: 1.15rem !important;
+  }
+
+  .leadership-portrait-wrap {
+    width: 82px !important;
+    height: 82px !important;
+  }
+
+  .leadership-heading h1 {
+    font-size: 2.15rem !important;
+  }
+
+  .leadership-intro {
+    font-size: .94rem !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 980px) and (orientation: landscape) {
+  .leadership-identity-card {
+    grid-template-columns: 132px minmax(0, 1fr) !important;
+    grid-template-areas:
+      "portrait heading"
+      "portrait summary" !important;
+    column-gap: 2rem !important;
+    row-gap: .85rem !important;
+    padding: 2rem 2.25rem !important;
+  }
+
+  .leadership-portrait-wrap {
+    width: 132px !important;
+    height: 132px !important;
+    align-self: center !important;
+  }
+}
+
+/* CoreG v4.3.2 mobile profile end */

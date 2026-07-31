@@ -1,3 +1,7 @@
+## v4.3.2 — Mobile Leadership Composition Fix
+
+- Rebuilt the mobile executive profile so the portrait sits directly beside the Leadership Summary.
+
 ## v4.3.1 — Leadership Polish and Access Routing Fix
 
 - Corrected Request Access routing and refined responsive Leadership presentation.

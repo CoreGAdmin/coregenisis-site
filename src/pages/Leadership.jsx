@@ -25,18 +25,24 @@ export default function Leadership() {
             </nav>
 
             <article className="leadership-identity-card">
-              <div className="leadership-portrait-wrap">
-                <img className="leadership-portrait" src={executivePortrait}
-                  alt="Todd Morgan, Chief Executive Officer of CoreG" width="1536" height="1536" />
-              </div>
-              <div className="leadership-summary">
+              <div className="leadership-heading">
                 <p className="leadership-eyebrow">Chief Executive Officer</p>
                 <h1>Todd Morgan</h1>
                 <div className="leadership-rule" aria-hidden="true" />
-                <p className="leadership-summary-label">Leadership Summary</p>
-                <p className="leadership-intro">
-                  Leads CoreG&apos;s strategy, institutional growth, and executive operations while guiding the Firm&apos;s capital markets and governance strategy to establish a more trusted, transparent, and institutionally accountable private capital markets ecosystem.
-                </p>
+              </div>
+
+              <div className="leadership-profile-row">
+                <div className="leadership-portrait-wrap">
+                  <img className="leadership-portrait" src={executivePortrait}
+                    alt="Todd Morgan, Chief Executive Officer of CoreG" width="1536" height="1536" />
+                </div>
+
+                <div className="leadership-summary">
+                  <p className="leadership-summary-label">Leadership Summary</p>
+                  <p className="leadership-intro">
+                    Leads CoreG&apos;s strategy, institutional growth, and executive operations while guiding the Firm&apos;s capital markets and governance strategy to establish a more trusted, transparent, and institutionally accountable private capital markets ecosystem.
+                  </p>
+                </div>
               </div>
             </article>
 
