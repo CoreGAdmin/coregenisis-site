@@ -1,3 +1,9 @@
+## v4.2.1 — Mobile Leadership Alignment
+
+- Corrected mobile navigation alignment and control sizing.
+- Rebalanced the Leadership identity card for mobile screens.
+- Updated the leadership summary from future-state to operating-state language.
+
 ## v4.2.0 — Leadership Profile Finalization
 
 - Replaced the oversized black-background portrait treatment with a proportional circular executive portrait.

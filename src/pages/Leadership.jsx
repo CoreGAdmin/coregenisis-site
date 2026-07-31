@@ -50,16 +50,17 @@ export default function Leadership() {
                 />
               </div>
 
-              <div className="leadership-summary">
+              <div className="leadership-name-card">
                 <p className="leadership-eyebrow">Chief Executive Officer</p>
                 <h1>Todd Morgan</h1>
                 <div className="leadership-rule" aria-hidden="true" />
-                <p className="leadership-intro">
-                  Todd Morgan leads CoreG&apos;s strategy, growth, and operational
-                  execution as the Firm builds the institutional infrastructure layer
-                  for the next generation of private capital markets.
-                </p>
               </div>
+
+              <p className="leadership-intro">
+                Todd Morgan leads CoreG&apos;s strategy, growth, and operational
+                execution as the Firm operates the institutional infrastructure
+                layer for the next generation of private capital markets.
+              </p>
             </article>
 
             <section className="leadership-biography" aria-labelledby="executive-biography">
