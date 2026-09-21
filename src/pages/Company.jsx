@@ -13,7 +13,7 @@ export default function Company() {
         <div className="max-w-[760px] mx-auto">
           <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">Our Firm</div>
           <h1 className="font-display text-[clamp(32px,4.5vw,50px)] font-medium leading-[1.15] text-white mb-6">
-            An authorized intermediary built for confidence, integrity, and accountability.
+            A transaction-support business built for confidence, integrity, and accountability.
           </h1>
           <p className="text-lg text-ice/85 max-w-[620px] mx-auto leading-relaxed">
             CoreG serves private capital markets through a disciplined operating standard designed to strengthen the integrity of every engagement.
@@ -24,7 +24,7 @@ export default function Company() {
       <section className="bg-white px-8 py-20">
         <div className="max-w-[720px] mx-auto">
           <p className="text-[16px] text-slate leading-[1.8] mb-6">
-            CoreG is an authorized intermediary serving institutional and qualified participants across private capital markets. We facilitate transactions without originating the assets, instruments, or investment opportunities that enter our process.
+            CoreG is a transaction-support business serving institutional and qualified participants across private capital markets. We facilitate transactions without originating the assets, instruments, or investment opportunities that enter our process.
           </p>
           <p className="text-[16px] text-slate leading-[1.8] mb-6">
             Our responsibility extends beyond transaction execution. CoreG applies structured verification, documentation, due diligence, and transaction oversight so that identities, authority, assets, and material claims are addressed before a transaction advances.
@@ -50,7 +50,7 @@ export default function Company() {
           <div>
             <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-3">Our Vision</div>
             <p className="text-[17px] text-navy leading-[1.7] font-medium">
-              To become the authorized intermediary private capital market participants rely on when transaction integrity, accountability, and verifiable execution matter most.
+              To become the transaction-support business private capital market participants rely on when transaction integrity, accountability, and verifiable execution matter most.
             </p>
           </div>
           <div className="border-t border-[#E2E8F0] pt-10 text-center">

@@ -26,7 +26,7 @@ export const PROCESS_STAGES = [
   {
     number: "05",
     name: "Monetization",
-    purpose: "Evaluate and execute the approved pathway for converting verified asset value into transaction capacity.",
+    purpose: "Evaluate a proposed pathway with qualified professionals, subject to legal scope, counterparty acceptance and independent verification.",
     gate: "The monetization pathway must align with the verified asset, approved structure, and authorized counterparties.",
   },
   {

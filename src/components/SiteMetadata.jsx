@@ -1,3 +1,4 @@
+import { LEGAL_PAGES } from "../data/legalContent.js";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -8,10 +9,10 @@ const DEFAULT = {
 
 const ROUTE_META = {
   "/": DEFAULT,
-  "/who-we-are": { title: "Who We Are | CoreG", description: "Understand CoreG's role and institutional responsibility as an authorized private capital markets intermediary." },
+  "/who-we-are": { title: "Who We Are | CoreG", description: "Understand CoreG's role and institutional responsibility as an private capital markets transaction-support business." },
   "/how-we-work": { title: "How We Work | CoreG", description: "Explore CoreG's eight-stage governed transaction process from intake through completion." },
   "/platform": { title: "Platform | CoreG", description: "See how CoreG's governed operating environment supports verification, documentation, oversight, and an auditable transaction record." },
-  "/leadership": { title: "Leadership | CoreG", description: "Meet Todd Morgan, Chief Executive Officer of CoreG." },
+  "/leadership": { title: "Leadership | CoreG", description: "Meet Todd Morgan, President & Chief Executive Officer of CoreG." },
   "/about": { title: "About | CoreG", description: "Learn CoreG's mission, vision, institutional purpose, and relationship with CoreIdentity Technologies." },
   "/insights": { title: "Insights | CoreG", description: "CoreG thought leadership, announcements, platform updates, and institutional perspectives." },
   "/insights/faq": { title: "Frequently Asked Questions | CoreG", description: "Answers about CoreG, private capital markets, participant roles, verification, and transaction governance." },
@@ -33,7 +34,8 @@ export default function SiteMetadata() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const metadata = ROUTE_META[pathname] ?? {
+    const legal = LEGAL_PAGES[pathname.slice(1)];
+    const metadata = (legal ? {title: legal[0]+" | CoreG", description: "CoreG "+legal[0]+"."} : ROUTE_META[pathname]) ?? {
       title: "Page Not Found | CoreG",
       description: "The requested CoreG page could not be found.",
     };

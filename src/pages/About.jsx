@@ -17,7 +17,7 @@ export default function About() {
         <section className="bg-white px-5 sm:px-8 py-20">
           <div className="max-w-[820px] mx-auto space-y-12">
             <div><div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-3">Our Mission</div><p className="text-[17px] text-navy leading-[1.7] font-medium">To facilitate private capital transactions with confidence, integrity, and accountability by applying a consistent standard of verification, documentation, due diligence, and transaction oversight.</p></div>
-            <div><div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-3">Our Vision</div><p className="text-[17px] text-navy leading-[1.7] font-medium">To become the authorized intermediary private capital market participants rely on when transaction integrity, accountability, and verifiable execution matter most.</p></div>
+            <div><div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-3">Our Vision</div><p className="text-[17px] text-navy leading-[1.7] font-medium">To become the transaction-support business private capital market participants rely on when transaction integrity, accountability, and verifiable execution matter most.</p></div>
             <div className="border-t border-[#E2E8F0] pt-10 text-center"><p className="font-display text-[24px] sm:text-[28px] font-medium text-navy">Capital should never move faster than truth.</p></div>
           </div>
         </section>

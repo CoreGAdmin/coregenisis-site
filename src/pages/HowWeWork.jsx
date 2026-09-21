@@ -8,7 +8,7 @@ export default function HowWeWork() {
   return (
     <div className="font-sans text-navy bg-white">
       <PageNav />
-      <main>
+      <main><p className="bg-mist px-8 py-4 text-center text-sm">This is CoreG’s intended operating standard. Public onboarding and enhanced automated controls remain unavailable pending configuration and validation.</p>
         <section className="bg-navy px-5 sm:px-8 pt-20 pb-14 text-center">
           <div className="max-w-[860px] mx-auto">
             <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">How We Work</div>

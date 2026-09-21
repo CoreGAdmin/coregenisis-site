@@ -26,7 +26,7 @@ export default function Leadership() {
 
             <article className="leadership-identity-card">
               <div className="leadership-heading">
-                <p className="leadership-eyebrow">Chief Executive Officer</p>
+                <p className="leadership-eyebrow">President &amp; Chief Executive Officer</p>
                 <h1>Todd Morgan</h1>
                 <div className="leadership-rule" aria-hidden="true" />
               </div>
@@ -34,13 +34,13 @@ export default function Leadership() {
               <div className="leadership-profile-row">
                 <div className="leadership-portrait-wrap">
                   <img className="leadership-portrait" src={executivePortrait}
-                    alt="Todd Morgan, Chief Executive Officer of CoreG" width="1536" height="1536" />
+                    alt="Todd Morgan, President &amp; Chief Executive Officer of CoreG" width="1536" height="1536" />
                 </div>
 
                 <div className="leadership-summary">
                   <p className="leadership-summary-label">Leadership Summary</p>
                   <p className="leadership-intro">
-                    Responsible for leading CoreG&apos;s strategy, institutional growth, and executive operations while guiding the Firm&apos;s capital markets and governance strategy to establish a more trusted, transparent, and institutionally accountable private capital markets ecosystem.
+                    Leads CoreG’s strategy, business development, institutional relationships, and executive operations, with a focus on accountable due-diligence coordination and transaction support.
                   </p>
                 </div>
               </div>
@@ -59,10 +59,11 @@ export default function Leadership() {
 
             <section className="leadership-biography" aria-labelledby="biography">
               <p className="leadership-section-label" id="biography">Biography</p>
-              <p>As Chief Executive Officer of CoreG, Mr. Morgan is responsible for the Firm&apos;s strategic direction, institutional growth, executive operations, and capital markets governance strategy.</p>
-              <p>He brings more than 30 years of executive leadership experience across highly regulated, multi-stakeholder operating environments where operational precision, institutional accountability, and disciplined execution were fundamental to mission success. His background spans federal contracting, National Intelligence and defense programs, and multi-entity business operations. Throughout his career, he has led complex organizations through environments that demanded rigorous governance, verifiable standards, and the ability to deliver under the highest levels of institutional scrutiny.</p>
-              <p>At CoreG, he guides the Firm&apos;s capital markets and governance strategy while leading its institutional growth and executive operations. His focus is advancing a governance-first operating model that strengthens trust, verification, operational integrity, and institutional accountability across private capital markets.</p>
-              <p>He believes private capital markets should operate to the same institutional standards expected throughout the broader financial system. Under his leadership, CoreG is establishing a more transparent and accountable environment for capital formation—one where governance, verification, and operational integrity are embedded into the way institutions operate and investors engage with the market.</p>
+              <p>Todd Morgan is President &amp; Chief Executive Officer of CoreG. He leads the company’s strategic direction, business development, institutional relationships, and executive operations, with responsibility for building a disciplined approach to due-diligence coordination and transaction support.</p>
+              <p>His career spans more than 30 years and includes federal contracting, support to the National Intelligence Community and the Department of Defense, and multi-entity business operations. His experience includes managing a multi-million-dollar portfolio of federal contracts in environments where accountability, documentation, and disciplined execution are essential.</p>
+              <p>At CoreG, he applies that experience to organizational development, participant accountability, and the coordination of professional expertise. His priorities include establishing clear responsibilities, evaluating transaction readiness, and developing the governance and technology needed to support a consistent operating process.</p>
+              <p>He is focused on building CoreG for long-term institutional credibility: material claims supported by evidence, clearly defined professional roles, and business decisions informed by independent legal, financial, and technical review.</p>
+
             </section>
 
             <blockquote className="leadership-quote">

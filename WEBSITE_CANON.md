@@ -50,3 +50,6 @@ Every public-site change must be evaluated for:
 1. fidelity to the CoreG operating model;
 2. contribution to institutional confidence; and
 3. alignment with this canon.
+
+## September 21, 2026 clarification
+The public site must not imply regulatory authorization or that planned vault, screening and automated controls are live. The attached launch requirements supersede older unqualified “authorized intermediary” positioning. Eight canonical stages and cross-lifecycle Trust Infrastructure / AEG governance remain unchanged.

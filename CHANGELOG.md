@@ -1,3 +1,7 @@
+# September 21, 2026 — v4.4.0
+
+Leadership title and biography; public website legal/disclosure pages; corrected capability and privacy claims; clarified preliminary email inquiries. See docs/LAUNCH-2026-09-21.md.
+
 ## v4.3.3 — Leadership Summary Copy Correction
 
 - Applied the approved complete-sentence Leadership Summary.

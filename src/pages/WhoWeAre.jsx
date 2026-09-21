@@ -11,7 +11,7 @@ export default function WhoWeAre() {
         <section className="bg-navy px-5 sm:px-8 pt-20 pb-16 text-center">
           <div className="max-w-[800px] mx-auto">
             <div className="font-mono text-xs tracking-[0.1em] text-gold uppercase mb-4">Who We Are</div>
-            <h1 className="font-display text-[clamp(34px,5vw,56px)] font-medium leading-[1.1] text-white mb-6 text-balance">An authorized intermediary serving private capital markets.</h1>
+            <h1 className="font-display text-[clamp(34px,5vw,56px)] font-medium leading-[1.1] text-white mb-6 text-balance">A transaction-support business serving private capital markets.</h1>
             <p className="text-lg text-ice/85 max-w-[680px] mx-auto leading-relaxed">CoreG facilitates qualifying private capital transactions through a disciplined operating standard built to ensure confidence, integrity, and accountability from first engagement through close.</p>
           </div>
         </section>

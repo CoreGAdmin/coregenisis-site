@@ -6,7 +6,7 @@ const DESTINATIONS = [
   {
     number: "01",
     title: "Who We Are",
-    body: "Understand CoreG's institutional role, market purpose, and responsibility as an authorized private capital markets intermediary.",
+    body: "Understand CoreG's institutional role, market purpose, and responsibility as an private capital markets transaction-support business.",
     path: "/who-we-are",
     action: "Discover CoreG",
   },
@@ -70,7 +70,7 @@ export default function Home() {
           <div className="relative max-w-[1120px] mx-auto">
             <div className="max-w-[930px]">
               <div className="font-mono text-[11px] sm:text-xs tracking-[0.14em] text-gold uppercase mb-7">
-                Authorized Private Capital Markets Intermediary
+                Private Capital Markets · Business & Transaction Support
               </div>
               <h1 className="font-display text-[clamp(42px,7vw,78px)] font-medium leading-[1.03] text-white mb-7 text-balance">
                 Private capital markets, held to the standard they should have had from the start.

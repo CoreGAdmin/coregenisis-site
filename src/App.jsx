@@ -9,8 +9,8 @@ import Insights from "./pages/Insights.jsx";
 import Contact from "./pages/Contact.jsx";
 import RequestAccess from "./pages/RequestAccess.jsx";
 import FAQ from "./pages/FAQ.jsx";
-import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
-import TermsOfService from "./pages/TermsOfService.jsx";
+import LegalNotice from "./pages/LegalNotice.jsx";
+import { LEGAL_PAGES } from "./data/legalContent.js";
 import NotFound from "./pages/NotFound.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import SiteMetadata from "./components/SiteMetadata.jsx";
@@ -31,8 +31,7 @@ export default function App() {
         <Route path="/insights/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/request-access" element={<RequestAccess />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-of-service" element={<TermsOfService />} />
+        {Object.keys(LEGAL_PAGES).map(path=><Route key={path} path={"/"+path} element={<LegalNotice/>}/>)}
 
         <Route path="/company" element={<Navigate to="/who-we-are" replace />} />
         <Route path="/governance" element={<Navigate to="/how-we-work" replace />} />

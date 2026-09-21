@@ -1,3 +1,4 @@
+import { LEGAL_PAGES } from "../data/legalContent.js";
 import { Link } from "react-router-dom";
 import logoDark from "../assets/coreg-logo-dark.png";
 import coreIdentityIcon from "../assets/coreidentity-icon.png";
@@ -28,9 +29,10 @@ export default function PageFooter() {
             </div>
           </div>
         </div>
+        <p className="text-sm text-ice/90 leading-relaxed border-t border-navyLine pt-6 mb-6">Important notice: CoreG provides information about business services, due-diligence coordination and transaction support. This website offers no banking, brokerage, investment advisory, custody, escrow or money-transfer service. Content is not investment, legal, tax or accounting advice or an offer to buy or sell an asset. Review of an asset or document does not guarantee ownership, value, transferability, funding or transaction completion. Independent professional verification remains necessary.</p>
         <div className="border-t border-navyLine pt-5 flex flex-wrap justify-between gap-3">
           <span className="text-xs text-slateLt">© 2026 CoreGenisis dba CoreG. All rights reserved.</span>
-          <div className="flex gap-5"><Link to="/privacy-policy" className="text-xs text-slateLt hover:text-ice">Privacy Policy</Link><Link to="/terms-of-service" className="text-xs text-slateLt hover:text-ice">Terms of Service</Link></div>
+          <nav aria-label="Legal and transparency" className="flex flex-wrap gap-x-5 gap-y-3">{Object.entries(LEGAL_PAGES).map(([path,[title]])=><Link key={path} to={"/"+path} className="text-xs text-ice hover:underline">{title}</Link>)}<Link to="/contact" className="text-xs text-ice hover:underline">Contact</Link></nav>
         </div>
       </div>
     </footer>

@@ -17,7 +17,7 @@ export default function Platform() {
             One transaction process.<br/>Governed from intake through close.
           </h1>
           <p className="text-lg text-ice/85 max-w-[640px] mx-auto leading-relaxed">
-            CoreG facilitates qualifying transactions through a structured, stage-gated process. Each stage addresses a distinct transaction requirement while preserving one continuous, auditable record.
+            CoreG’s intended operating model follows eight stages. The descriptions below explain the standard being developed; they do not certify that all controls or services are live. Public onboarding remains unavailable.
           </p>
         </div>
       </section>
