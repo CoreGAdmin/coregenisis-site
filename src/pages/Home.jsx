@@ -72,7 +72,7 @@ export default function Home() {
               <div className="font-mono text-[11px] sm:text-xs tracking-[0.14em] text-gold uppercase mb-7">
                 Private Capital Markets · Business & Transaction Support
               </div>
-              <h1 className="font-display text-[clamp(42px,7vw,78px)] font-medium leading-[1.03] text-white mb-7 text-balance">
+              <h1 className="font-display text-[clamp(34px,5vw,56px)] font-medium leading-[1.1] text-white mb-7 text-balance">
                 Private capital markets, held to the standard they should have had from the start.
               </h1>
               <p className="text-[17px] sm:text-xl text-ice/85 max-w-[760px] leading-[1.75] mb-10">
