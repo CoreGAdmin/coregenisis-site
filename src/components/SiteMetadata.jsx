@@ -1,3 +1,4 @@
+import { ARTICLES } from "../data/articles.js";
 import { LEGAL_PAGES } from "../data/legalContent.js";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -35,7 +36,8 @@ export default function SiteMetadata() {
 
   useEffect(() => {
     const legal = LEGAL_PAGES[pathname.slice(1)];
-    const metadata = (legal ? {title: legal[0]+" | CoreG", description: "CoreG "+legal[0]+"."} : ROUTE_META[pathname]) ?? {
+    const article = ARTICLES.find(item => pathname === "/insights/" + item.slug);
+    const metadata = (article ? {title: article.title+" | CoreG", description: article.description} : legal ? {title: legal[0]+" | CoreG", description: "CoreG "+legal[0]+"."} : ROUTE_META[pathname]) ?? {
       title: "Page Not Found | CoreG",
       description: "The requested CoreG page could not be found.",
     };
@@ -45,7 +47,7 @@ export default function SiteMetadata() {
     upsertMeta('meta[name="description"]', { name: "description", content: metadata.description });
     upsertMeta('meta[property="og:title"]', { property: "og:title", content: metadata.title });
     upsertMeta('meta[property="og:description"]', { property: "og:description", content: metadata.description });
-    upsertMeta('meta[property="og:type"]', { property: "og:type", content: "website" });
+    upsertMeta('meta[property="og:type"]', { property: "og:type", content: article ? "article" : "website" });
     upsertMeta('meta[property="og:url"]', { property: "og:url", content: canonicalUrl });
     upsertMeta('meta[property="og:image"]', { property: "og:image", content: `${window.location.origin}/coreg-og.png` });
     upsertMeta('meta[name="twitter:card"]', { name: "twitter:card", content: "summary_large_image" });
