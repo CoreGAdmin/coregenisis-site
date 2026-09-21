@@ -15,7 +15,7 @@ export default function InsightArticle() {
       <article>
         <header className="bg-navy px-5 sm:px-8 pt-14 pb-16">
           <div className="max-w-[800px] mx-auto">
-            <Link to="/insights" className="text-ice underline underline-offset-4 text-sm">← All insights</Link>
+            <Link to="/insights/thought-leadership" className="text-ice underline underline-offset-4 text-sm">← All thought leadership</Link>
             <p className="font-mono text-xs uppercase tracking-[0.1em] text-gold mt-10 mb-5">{article.category}</p>
             <h1 className="font-display text-[clamp(34px,5vw,54px)] leading-[1.15] font-medium text-white mb-6">{article.title}</h1>
             <p className="text-ice text-sm">{article.author} · <time dateTime={article.date}>{article.displayDate}</time> · {article.readMinutes} min read</p>

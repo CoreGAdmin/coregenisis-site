@@ -7,6 +7,7 @@ import Leadership from "./pages/Leadership.jsx";
 import About from "./pages/About.jsx";
 import Insights from "./pages/Insights.jsx";
 import InsightArticle from "./pages/InsightArticle.jsx";
+import ThoughtLeadership from "./pages/ThoughtLeadership.jsx";
 import Contact from "./pages/Contact.jsx";
 import RequestAccess from "./pages/RequestAccess.jsx";
 import FAQ from "./pages/FAQ.jsx";
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/insights" element={<Insights />} />
         <Route path="/insights/faq" element={<FAQ />} />
+        <Route path="/insights/thought-leadership" element={<ThoughtLeadership />} />
         <Route path="/insights/:slug" element={<InsightArticle />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/request-access" element={<RequestAccess />} />

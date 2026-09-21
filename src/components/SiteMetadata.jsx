@@ -16,6 +16,7 @@ const ROUTE_META = {
   "/leadership": { title: "Leadership | CoreG", description: "Meet Todd Morgan, President & Chief Executive Officer of CoreG." },
   "/about": { title: "About | CoreG", description: "Learn CoreG's mission, vision, institutional purpose, and relationship with CoreIdentity Technologies." },
   "/insights": { title: "Insights | CoreG", description: "CoreG thought leadership, announcements, platform updates, and institutional perspectives." },
+  "/insights/thought-leadership": { title: "Thought Leadership | CoreG", description: "CoreG perspectives on transaction diligence, governance and digital assets." },
   "/insights/faq": { title: "Frequently Asked Questions | CoreG", description: "Answers about CoreG, private capital markets, participant roles, verification, and transaction governance." },
   "/contact": { title: "Contact | CoreG", description: "Contact CoreG regarding a qualifying transaction, institutional relationship, platform question, or general inquiry." },
   "/privacy-policy": { title: "Privacy Policy | CoreG", description: "CoreG privacy policy." },
