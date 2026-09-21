@@ -1,3 +1,4 @@
+import BrandReferences from "../components/BrandReferences.jsx";
 import coreIdentityIcon from "../assets/coreidentity-icon.png";
 import PageNav from "../components/PageNav.jsx";
 import PageFooter from "../components/PageFooter.jsx";
@@ -29,9 +30,7 @@ export default function Company() {
           <p className="text-[16px] text-slate leading-[1.8] mb-6">
             Our responsibility extends beyond transaction execution. CoreG applies structured verification, documentation, due diligence, and transaction oversight so that identities, authority, assets, and material claims are addressed before a transaction advances.
           </p>
-          <p className="text-[16px] text-slate leading-[1.8]">
-            CoreG is governed by Trust Infrastructure and Autonomous Execution Governance provided by CoreIdentity Technologies. That relationship strengthens how CoreG operates while preserving a clear distinction: CoreG is the intermediary; CoreIdentity owns and operates the governance infrastructure beneath it.
-          </p>
+          <p className="text-[16px] text-slate leading-[1.8]"><BrandReferences>{"\n            CoreG is governed by Trust Infrastructure and Autonomous Execution Governance provided by CoreIdentity Technologies. That relationship strengthens how CoreG operates while preserving a clear distinction: CoreG is the intermediary; CoreIdentity owns and operates the governance infrastructure beneath it.\n          "}</BrandReferences></p>
         </div>
       </section>
 

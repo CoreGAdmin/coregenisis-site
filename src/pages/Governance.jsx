@@ -1,3 +1,4 @@
+import BrandReferences from "../components/BrandReferences.jsx";
 import coreIdentityIcon from "../assets/coreidentity-icon.png";
 import PageNav from "../components/PageNav.jsx";
 import PageFooter from "../components/PageFooter.jsx";
@@ -85,11 +86,9 @@ export default function Governance() {
           <div className="inline-flex items-center gap-3 bg-white border border-[#E2E8F0] rounded-full pl-3 pr-5 py-2.5 mb-6">
             <img src={coreIdentityIcon} alt="CoreIdentity" className="h-7 w-auto" />
             <span className="text-[13px] text-slate">Governed by</span>
-            <span className="text-[13px] text-navy font-semibold">CoreIdentity Technologies</span>
+            <span className="text-[13px] text-navy font-semibold"><BrandReferences>{"CoreIdentity Technologies"}</BrandReferences></span>
           </div>
-          <p className="text-[15px] text-slate leading-relaxed">
-            CoreG is the private capital markets intermediary. CoreIdentity Technologies owns and operates the Trust Infrastructure and Autonomous Execution Governance capabilities under which CoreG conducts governed transaction activity.
-          </p>
+          <p className="text-[15px] text-slate leading-relaxed"><BrandReferences>{"\n            CoreG is the private capital markets intermediary. CoreIdentity Technologies owns and operates the Trust Infrastructure and Autonomous Execution Governance capabilities under which CoreG conducts governed transaction activity.\n          "}</BrandReferences></p>
         </div>
       </section>
 

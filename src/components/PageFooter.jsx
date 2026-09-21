@@ -1,3 +1,4 @@
+import BrandReferences from "./BrandReferences.jsx";
 import { LEGAL_PAGES } from "../data/legalContent.js";
 import { Link } from "react-router-dom";
 import logoDark from "../assets/coreg-logo-dark.png";
@@ -22,10 +23,10 @@ export default function PageFooter() {
             <div className="grid grid-cols-2 gap-x-5 gap-y-2">{FOOTER_NAV.map(([label, path]) => <Link key={path} to={path} className="text-sm text-slateLt hover:text-white">{label}</Link>)}</div>
           </div>
           <div>
-            <div className="font-mono text-[11px] tracking-[0.12em] text-gold uppercase mb-4">Trust Infrastructure</div>
+            <div className="font-mono text-[11px] tracking-[0.12em] text-gold uppercase mb-4"><BrandReferences>{"Trust Infrastructure"}</BrandReferences></div>
             <div className="inline-flex items-center gap-2.5 text-xs text-slateLt">
               <img src={coreIdentityIcon} alt="CoreIdentity Technologies" className="h-7 w-auto" />
-              <span>Technology provided by <span className="text-white/90 font-medium">CoreIdentity Technologies</span></span>
+              <span>Technology provided by <span className="text-white/90 font-medium"><BrandReferences>{"CoreIdentity Technologies"}</BrandReferences></span></span>
             </div>
           </div>
         </div>

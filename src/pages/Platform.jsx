@@ -1,3 +1,4 @@
+import BrandReferences from "../components/BrandReferences.jsx";
 import PageNav from "../components/PageNav.jsx";
 import PageFooter from "../components/PageFooter.jsx";
 import PipelineBar from "../components/PipelineBar.jsx";
@@ -45,7 +46,7 @@ export default function Platform() {
             <div className="font-mono text-xs tracking-[0.1em] text-slateLt uppercase mb-3">{section.eyebrow}</div>
             <h2 className="font-display text-[28px] sm:text-[32px] font-medium text-navy mb-6 leading-tight">{section.title}</h2>
             {section.paragraphs.map((p, pi) => (
-              <p key={pi} className="text-[15px] text-slate leading-[1.75] mb-4 last:mb-0">{p}</p>
+              <p key={pi} className="text-[15px] text-slate leading-[1.75] mb-4 last:mb-0"><BrandReferences>{p}</BrandReferences></p>
             ))}
           </div>
         </section>

@@ -1,3 +1,4 @@
+import BrandReferences from "../components/BrandReferences.jsx";
 import PageNav from "../components/PageNav.jsx";
 import PageFooter from "../components/PageFooter.jsx";
 import coreIdentityIcon from "../assets/coreidentity-icon.png";
@@ -24,8 +25,8 @@ export default function About() {
         <section className="bg-mist px-5 sm:px-8 py-16 border-t border-[#E2E8F0]">
           <div className="max-w-[800px] mx-auto text-center">
             <img src={coreIdentityIcon} alt="CoreIdentity Technologies" className="h-10 w-auto mx-auto mb-5" />
-            <h2 className="font-display text-2xl font-medium text-navy mb-4">Built on Trust Infrastructure provided by CoreIdentity Technologies.</h2>
-            <p className="text-[15px] text-slate leading-[1.75] mx-auto">CoreG is an independent private capital markets company and client of CoreIdentity Technologies. CoreIdentity Technologies builds and operates the Trust Infrastructure and governed technology environment supporting CoreG's operating model. CoreG remains responsible for its intermediary activities, institutional relationships, and transaction execution.</p>
+            <h2 className="font-display text-2xl font-medium text-navy mb-4"><BrandReferences>{"Built on Trust Infrastructure provided by CoreIdentity Technologies."}</BrandReferences></h2>
+            <p className="text-[15px] text-slate leading-[1.75] mx-auto"><BrandReferences>{"CoreG is an independent private capital markets company and client of CoreIdentity Technologies. CoreIdentity Technologies builds and operates the Trust Infrastructure and governed technology environment supporting CoreG's operating model. CoreG remains responsible for its intermediary activities, institutional relationships, and transaction execution."}</BrandReferences></p>
           </div>
         </section>
       </main>
