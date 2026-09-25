@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PageNav from "../components/PageNav.jsx";
 import PageFooter from "../components/PageFooter.jsx";
 import { ComingSoonButton } from "../components/ComingSoonButton.jsx";
-import executivePortrait from "../assets/todd-morgan-leadership.jpg";
+import executivePortrait from "../assets/todd-morgan-leadership-202609.png";
 
 const focusAreas = [
   { title: "Capital Markets Strategy", description: "Advancing a governance-first operating model that strengthens trust, transparency, and accountability throughout private capital markets." },
@@ -34,7 +34,7 @@ export default function Leadership() {
               <div className="leadership-profile-row">
                 <div className="leadership-portrait-wrap">
                   <img className="leadership-portrait" src={executivePortrait}
-                    alt="Todd Morgan, President &amp; Chief Executive Officer of CoreG" width="1536" height="1536" />
+                    alt="Todd Morgan, President &amp; Chief Executive Officer of CoreG" width="1330" height="1182" />
                 </div>
 
                 <div className="leadership-summary">
